@@ -1500,9 +1500,9 @@ Discarded input sections
                 0x0000000000000000        0xa CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .bss.uart_inst
                 0x0000000000000000        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccjcV9vq.o
- .data          0x0000000000000000        0x0 /tmp/ccjcV9vq.o
- .bss           0x0000000000000000        0x0 /tmp/ccjcV9vq.o
+ .text          0x0000000000000000        0x0 /tmp/ccxnRGUh.o
+ .data          0x0000000000000000        0x0 /tmp/ccxnRGUh.o
+ .bss           0x0000000000000000        0x0 /tmp/ccxnRGUh.o
  .data          0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .bss           0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
@@ -1713,7 +1713,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccjcV9vq.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccxnRGUh.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2891,9 +2891,10 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .rodata.__bi_152.1
                 0x00000000100085e4        0x8 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.str1.1
-                0x00000000100085ec       0x90 git/libcmake_git_version_tracking.a(git.c.obj)
-                                         0x91 (size before relaxing)
+                0x00000000100085ec       0x8d git/libcmake_git_version_tracking.a(git.c.obj)
+                                         0x8e (size before relaxing)
                 0x000000001000867c                . = ALIGN (0x4)
+ *fill*         0x0000000010008679        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
                 0x000000001000867c                . = ALIGN (0x4)
 
@@ -3437,7 +3438,7 @@ LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/c
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 LOAD libcore.a
-LOAD /tmp/ccjcV9vq.o
+LOAD /tmp/ccxnRGUh.o
 LOAD git/libcmake_git_version_tracking.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
@@ -3590,7 +3591,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000ac0       0x2c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .ARM.attributes
-                0x0000000000000aec       0x22 /tmp/ccjcV9vq.o
+                0x0000000000000aec       0x22 /tmp/ccxnRGUh.o
  .ARM.attributes
                 0x0000000000000b0e       0x2c git/libcmake_git_version_tracking.a(git.c.obj)
  .ARM.attributes
