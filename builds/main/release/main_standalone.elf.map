@@ -1503,9 +1503,9 @@ Discarded input sections
                 0x0000000000000000        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .bss.uart_inst
                 0x0000000000000000        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccJZKU4z.o
- .data          0x0000000000000000        0x0 /tmp/ccJZKU4z.o
- .bss           0x0000000000000000        0x0 /tmp/ccJZKU4z.o
+ .text          0x0000000000000000        0x0 /tmp/ccCQA3CP.o
+ .data          0x0000000000000000        0x0 /tmp/ccCQA3CP.o
+ .bss           0x0000000000000000        0x0 /tmp/ccCQA3CP.o
  .data          0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .bss           0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
@@ -1665,7 +1665,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccJZKU4z.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccCQA3CP.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2599,7 +2599,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .iplt           0x000000001000a600        0x0
  .iplt          0x000000001000a600        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x000000001000a600      0x87c
+.rodata         0x000000001000a600      0x8a0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.prvSerialDisplaySystemInfo.str1.4
                 0x000000001000a600       0xa1 CMakeFiles/main_standalone.dir/core/main.c.obj
@@ -2621,149 +2621,150 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x000000001000a6cc       0x38 CMakeFiles/main_standalone.dir/core/usb/webusb.c.obj
                 0x000000001000a6cc                desc_url
  .rodata.str1.4
-                0x000000001000a704       0x3b CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
- *fill*         0x000000001000a73f        0x1 
+                0x000000001000a704       0x65 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+ *fill*         0x000000001000a769        0x3 
  .rodata.__compound_literal.0
-                0x000000001000a740        0x2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
- *fill*         0x000000001000a742        0x2 
+                0x000000001000a76c        0x2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+ *fill*         0x000000001000a76e        0x2 
  .rodata.desc_bos
-                0x000000001000a744       0x39 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x000000001000a744                desc_bos
- *fill*         0x000000001000a77d        0x3 
+                0x000000001000a770       0x39 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000a770                desc_bos
+ *fill*         0x000000001000a7a9        0x3 
  .rodata.desc_configuration
-                0x000000001000a780       0x62 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x000000001000a780                desc_configuration
- *fill*         0x000000001000a7e2        0x2 
+                0x000000001000a7ac       0x62 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000a7ac                desc_configuration
+ *fill*         0x000000001000a80e        0x2 
  .rodata.desc_device
-                0x000000001000a7e4       0x12 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x000000001000a7e4                desc_device
- *fill*         0x000000001000a7f6        0x2 
+                0x000000001000a810       0x12 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000a810                desc_device
+ *fill*         0x000000001000a822        0x2 
  .rodata.desc_ms_os_20
-                0x000000001000a7f8       0xb2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x000000001000a7f8                desc_ms_os_20
- *fill*         0x000000001000a8aa        0x2 
+                0x000000001000a824       0xb2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000a824                desc_ms_os_20
+ *fill*         0x000000001000a8d6        0x2 
  .rodata.pvRegisterBulkQueueTask.str1.4
-                0x000000001000a8ac        0x7 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
- *fill*         0x000000001000a8b3        0x1 
+                0x000000001000a8d8        0x7 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
+ *fill*         0x000000001000a8df        0x1 
  .rodata.pvCreateBulkQueue.str1.4
-                0x000000001000a8b4       0x13 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
- *fill*         0x000000001000a8c7        0x1 
+                0x000000001000a8e0       0x13 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
+ *fill*         0x000000001000a8f3        0x1 
  .rodata.pvRegisterMcuTempTask.str1.4
-                0x000000001000a8c8        0x6 CMakeFiles/main_standalone.dir/core/tasks/mcu_temperature.c.obj
- *fill*         0x000000001000a8ce        0x2 
+                0x000000001000a8f4        0x6 CMakeFiles/main_standalone.dir/core/tasks/mcu_temperature.c.obj
+ *fill*         0x000000001000a8fa        0x2 
  .rodata.spin_lock_claim.str1.4
-                0x000000001000a8d0       0x1f CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x000000001000a8ef        0x1 
+                0x000000001000a8fc       0x1f CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x000000001000a91b        0x1 
  .rodata.spin_lock_claim_unused.str1.4
-                0x000000001000a8f0       0x1b CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x000000001000a90b        0x1 
+                0x000000001000a91c       0x1b CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x000000001000a937        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x000000001000a90c       0x22 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x000000001000a92e        0x2 
+                0x000000001000a938       0x22 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000a95a        0x2 
  .rodata.panic.str1.4
-                0x000000001000a930       0x12 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000a942        0x2 
+                0x000000001000a95c       0x12 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x000000001000a96e        0x2 
  .rodata.panic_unsupported.str1.4
-                0x000000001000a944        0xe CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000a952        0x2 
+                0x000000001000a970        0xe CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x000000001000a97e        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x000000001000a954        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000a980        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x000000001000a960       0x15 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x000000001000a975        0x3 
+                0x000000001000a98c       0x15 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000a9a1        0x3 
  .rodata._vsnprintf
-                0x000000001000a978      0x1e0 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000a9a4      0x1e0 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000ab84        0x4 
  .rodata.pow10.0
-                0x000000001000ab58       0x50 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000ab88       0x50 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__wrap_malloc.str1.4
-                0x000000001000aba8        0xe CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- *fill*         0x000000001000abb6        0x2 
+                0x000000001000abd8        0xe CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ *fill*         0x000000001000abe6        0x2 
  .rodata.str1.4
-                0x000000001000abb8       0x44 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000abe8       0x44 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x000000001000abfc        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000ac2c        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x000000001000ac08        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000ac38        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x000000001000ac14        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000ac44        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x000000001000ac20        0x2 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x000000001000ac22        0x2 
+                0x000000001000ac50        0x2 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000ac52        0x2 
  .rodata.str1.4
-                0x000000001000ac24       0x2c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000ac54       0x2c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x000000001000ac50        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000ac80        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x000000001000ac5c        0x8 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000ac8c        0x8 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.prvTimerTask
-                0x000000001000ac64       0x28 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/freertos-smp/timers.c.obj
+                0x000000001000ac94       0x28 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/freertos-smp/timers.c.obj
  .rodata.xTimerCreateTimerTask.str1.4
-                0x000000001000ac8c       0x10 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/freertos-smp/timers.c.obj
+                0x000000001000acbc       0x10 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/freertos-smp/timers.c.obj
  .rodata.str1.4
-                0x000000001000ac9c       0x14 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000accc       0x14 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x000000001000acb0       0x49 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000ace0       0x49 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                          0x53 (size before relaxing)
- *fill*         0x000000001000acf9        0x3 
+ *fill*         0x000000001000ad29        0x3 
  .rodata.tud_task_ext
-                0x000000001000acfc       0x8c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000ad2c       0x8c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x000000001000ad88       0x30 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000adb8       0x30 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/device/usbd.c.obj
  .rodata.str1.4
-                0x000000001000adb8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000ade8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_142.0
-                0x000000001000adbc        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000adec        0xc CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_152.1
-                0x000000001000adc8        0x8 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000adf8        0x8 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.str1.4
-                0x000000001000add0       0xa9 git/libcmake_git_version_tracking.a(git.c.obj)
-                                         0xad (size before relaxing)
-                0x000000001000ae7c                . = ALIGN (0x4)
- *fill*         0x000000001000ae79        0x3 
+                0x000000001000ae00       0x9d git/libcmake_git_version_tracking.a(git.c.obj)
+                                         0xa1 (size before relaxing)
+                0x000000001000aea0                . = ALIGN (0x4)
+ *fill*         0x000000001000ae9d        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x000000001000ae7c                . = ALIGN (0x4)
+                0x000000001000aea0                . = ALIGN (0x4)
 
-.rel.dyn        0x000000001000ae7c        0x0
- .rel.iplt      0x000000001000ae7c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x000000001000aea0        0x0
+ .rel.iplt      0x000000001000aea0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000001000ae7c                __exidx_start = .
+                0x000000001000aea0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000001000ae7c                __exidx_end = .
-                0x000000001000ae7c                . = ALIGN (0x4)
-                0x000000001000ae7c                __binary_info_start = .
+                0x000000001000aea0                __exidx_end = .
+                0x000000001000aea0                . = ALIGN (0x4)
+                0x000000001000aea0                __binary_info_start = .
 
-.binary_info    0x000000001000ae7c       0x2c
+.binary_info    0x000000001000aea0       0x2c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x000000001000ae7c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aea0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x000000001000ae80        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aea4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x000000001000ae84        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aea8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x000000001000ae88        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aeac        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x000000001000ae8c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aeb0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x000000001000ae90        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aeb4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x000000001000ae94        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000aeb8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr142
-                0x000000001000ae98        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000aebc        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .binary_info.keep.__bi_ptr152
-                0x000000001000ae9c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000aec0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x000000001000aea0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000aec4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x000000001000aea4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x000000001000aea8                __binary_info_end = .
-                0x000000001000aea8                . = ALIGN (0x4)
-                0x000000001000aea8                __etext = .
+                0x000000001000aec8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000aecc                __binary_info_end = .
+                0x000000001000aecc                . = ALIGN (0x4)
+                0x000000001000aecc                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2772,7 +2773,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0     0x1714 load address 0x000000001000aea8
+.data           0x00000000200000c0     0x1714 load address 0x000000001000aecc
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2924,33 +2925,33 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x00000000200017d4                __data_end__ = .
 
 .tm_clone_table
-                0x00000000200017d4        0x0 load address 0x000000001000c5bc
+                0x00000000200017d4        0x0 load address 0x000000001000c5e0
  .tm_clone_table
                 0x00000000200017d4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x00000000200017d4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200017d4        0x0 load address 0x000000001000c5bc
+.igot.plt       0x00000000200017d4        0x0 load address 0x000000001000c5e0
  .igot.plt      0x00000000200017d4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200017d4        0x0 load address 0x000000001000c5bc
+                0x00000000200017d4        0x0 load address 0x000000001000c5e0
                 0x00000000200017d4                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001000c5bc
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000c5e0
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001000c5bc                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000c5e0                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001000c5bc
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000c5e0
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001000c5bc                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000c5e0                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x00000000200017d8    0x21158
                 0x00000000200017d8                . = ALIGN (0x4)
@@ -3155,8 +3156,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001000c5bc        0x0
-                0x000000001000c5bc                __flash_binary_end = .
+.flash_end      0x000000001000c5e0        0x0
+                0x000000001000c5e0                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3253,7 +3254,7 @@ LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/src/c
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 LOAD libcore.a
-LOAD /tmp/ccJZKU4z.o
+LOAD /tmp/ccCQA3CP.o
 LOAD git/libcmake_git_version_tracking.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
@@ -3406,7 +3407,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000ac0       0x2c CMakeFiles/main_standalone.dir/home/runner/work/pico/pico/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .ARM.attributes
-                0x0000000000000aec       0x22 /tmp/ccJZKU4z.o
+                0x0000000000000aec       0x22 /tmp/ccCQA3CP.o
  .ARM.attributes
                 0x0000000000000b0e       0x2c git/libcmake_git_version_tracking.a(git.c.obj)
  .ARM.attributes
