@@ -39,8 +39,8 @@ void pvCreateUsbTasks(void)
     xTaskCreateStatic(cdc_task, "cdc", CDC_STACK_SZIE, NULL, configMAX_PRIORITIES - 2, cdc_stack, &cdc_taskdef);
 #else
     // Create tasks using dynamic memory allocation
-    xTaskCreate(usb_device_task, "usbd", USBD_STACK_SIZE, NULL, configMAX_PRIORITIES - 1, NULL);
-    xTaskCreate(cdc_task, "cdc", CDC_STACK_SZIE, NULL, configMAX_PRIORITIES - 2, NULL);
+    xTaskCreateAffinitySet(usb_device_task, "usbd", USBD_STACK_SIZE, NULL, configMAX_PRIORITIES, 1 << 0, NULL);
+    // xTaskCreate(cdc_task, "cdc", CDC_STACK_SZIE, NULL, configMAX_PRIORITIES - 2, NULL);
 #endif
 }
 
@@ -56,6 +56,8 @@ void usb_device_task(void *param)
     // This should be called after scheduler/kernel is started.
     // Otherwise it could cause kernel issue since USB IRQ handler does use RTOS queue API.
     tud_init(BOARD_TUD_RHPORT);
+
+    printf("USB CORE: %i\n", get_core_num());
 
     // RTOS infinite loop
     while (1)

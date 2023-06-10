@@ -28,7 +28,7 @@ void pvRegisterBulkQueueTask(void)
 #if configSUPPORT_STATIC_ALLOCATION
     xTaskCreateStatic(bulk_queue_task, "bulkqd", MCU_BULK_QUEUE_STACK_SIZE, NULL, configMAX_PRIORITIES, mcu_temp_stack, &mcu_temp_taskdef)
 #else
-    xTaskCreate(bulk_queue_task, "bulkqd", MCU_BULK_QUEUE_STACK_SIZE, NULL, configMAX_PRIORITIES, NULL);
+    xTaskCreate(bulk_queue_task, "bulkqd", MCU_BULK_QUEUE_STACK_SIZE, NULL, configMAX_PRIORITIES - 1, NULL);
 #endif
 }
 

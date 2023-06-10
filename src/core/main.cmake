@@ -33,6 +33,7 @@ target_include_directories(${MAIN} PUBLIC
 # These sources should be PUBLIC so dependents linking against this library inherit these.
 target_sources(${MAIN} PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/main.c
+    ${CMAKE_CURRENT_LIST_DIR}/crit_trigger.c
     ${CMAKE_CURRENT_LIST_DIR}/feature_set.c
     ${CMAKE_CURRENT_LIST_DIR}/semaphores.c
     ${CMAKE_CURRENT_LIST_DIR}/usb/tasks.c

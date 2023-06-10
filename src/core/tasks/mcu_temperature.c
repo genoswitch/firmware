@@ -27,7 +27,7 @@ void pvRegisterMcuTempTask(void)
 #if configSUPPORT_STATIC_ALLOCATION
     xTaskCreateStatic(mcu_temp_task, "tempm", MCU_TEMP_STACK_SIZE, NULL, configMAX_PRIORITIES, mcu_temp_stack, &mcu_temp_taskdef)
 #else
-    xTaskCreate(mcu_temp_task, "tempp", MCU_TEMP_STACK_SIZE, NULL, configMAX_PRIORITIES, NULL);
+    xTaskCreate(mcu_temp_task, "tempp", MCU_TEMP_STACK_SIZE, NULL, configMAX_PRIORITIES - 1, NULL);
 #endif
 }
 

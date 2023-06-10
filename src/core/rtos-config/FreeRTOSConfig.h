@@ -105,9 +105,10 @@
 */
 
 /* SMP port only */
-#define configNUM_CORES                         1 // not thread safe yet
+#define configNUM_CORES                         2 // not thread safe yet
 #define configTICK_CORE                         0
-#define configRUN_MULTIPLE_PRIORITIES           0
+#define configRUN_MULTIPLE_PRIORITIES           1
+#define configUSE_CORE_AFFINITY                 1
 
 /* RP2040 specific */
 #define configSUPPORT_PICO_SYNC_INTEROP         1

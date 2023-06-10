@@ -4,6 +4,7 @@
 #include "task.h"
 
 #include "semaphores.h"
+#include "crit_trigger.h"
 
 // Standard libraries
 #include "pico/stdio.h"
@@ -41,7 +42,8 @@ int main(void)
     printf("INCLUDES: Flashloader support!\n");
 
     // Check if we have just upgraded.
-    if (watchdog_hw->scratch[0] == FLASH_APP_UPDATED) {
+    if (watchdog_hw->scratch[0] == FLASH_APP_UPDATED)
+    {
         printf("Application has just updated!\n");
         // Reset the scratch register.
         watchdog_hw->scratch[0] = 0;
@@ -63,6 +65,8 @@ int main(void)
 
     // Create semaphores (mutex locks)
     pvCreateSemaphores();
+
+    pvSetupCritTrigger();
 
 #ifdef INCLUDES_FLASHLOADER
     pvRegisterFlashloaderTask();

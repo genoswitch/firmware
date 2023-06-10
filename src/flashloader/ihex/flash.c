@@ -4,7 +4,10 @@
 #if configNUM_CORES > 1
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
 #endif
+
+#include "../../core/crit_trigger.h"
 
 #include <string.h>
 #include "pico/stdlib.h"
@@ -45,6 +48,12 @@ void flashImage(tFlashHeader *header, uint32_t length)
 // If we have more than one core, we need to stop
 // processes on other cores from interrupting the flash write.
 #if configNUM_CORES > 1
+    // Send a message to crit_trigger to enter critical on core 1. (usbd runs on core 0)
+    bool msg = true;
+    xQueueSend(xMessageQueue, &msg, (TickType_t)0);
+
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+
     // https://www.freertos.org/taskENTER_CRITICAL_taskEXIT_CRITICAL.html
     taskENTER_CRITICAL();
     uart_puts(PICO_DEFAULT_UART_INSTANCE, "Entered RTOS Critical Section\r\n");
@@ -54,6 +63,10 @@ void flashImage(tFlashHeader *header, uint32_t length)
     flash_range_program(FLASH_IMAGE_OFFSET, (uint8_t *)header, totalLength);
 
 #if configNUM_CORES > 1
+    // Send a message to crit_trigger to exit critical on core 1. (usbd runs on core 0)
+    msg = false;
+    xQueueSend(xMessageQueue, &msg, (TickType_t)0);
+
     taskEXIT_CRITICAL();
     uart_puts(PICO_DEFAULT_UART_INSTANCE, "Exited RTOS Critical Section\r\n");
 #endif
