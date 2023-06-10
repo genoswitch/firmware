@@ -4,7 +4,6 @@
 #include "task.h"
 
 #include "semaphores.h"
-#include "crit_trigger.h"
 
 // Standard libraries
 #include "pico/stdio.h"
@@ -65,8 +64,6 @@ int main(void)
 
     // Create semaphores (mutex locks)
     pvCreateSemaphores();
-
-    pvSetupCritTrigger();
 
 #ifdef INCLUDES_FLASHLOADER
     pvRegisterFlashloaderTask();

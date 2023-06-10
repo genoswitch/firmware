@@ -20,6 +20,8 @@
 #include "process.h"
 #include "../crc32.h"
 
+#include "../../core/crit_trigger.h"
+
 // lib/pico-flashloader
 #include "flashloader.h"
 
@@ -49,10 +51,7 @@ void flashImage(tFlashHeader *header, uint32_t length)
 // processes on other cores from interrupting the flash write.
 #if configNUM_CORES > 1
     // Send a message to crit_trigger to enter critical on core 1. (usbd runs on core 0)
-    bool msg = true;
-    xQueueSend(xMessageQueue, &msg, (TickType_t)0);
-
-    vTaskDelay(500 / portTICK_PERIOD_MS);
+    startSpinlock();
 
     // https://www.freertos.org/taskENTER_CRITICAL_taskEXIT_CRITICAL.html
     taskENTER_CRITICAL();
@@ -64,8 +63,7 @@ void flashImage(tFlashHeader *header, uint32_t length)
 
 #if configNUM_CORES > 1
     // Send a message to crit_trigger to exit critical on core 1. (usbd runs on core 0)
-    msg = false;
-    xQueueSend(xMessageQueue, &msg, (TickType_t)0);
+    stopSpinlock();
 
     taskEXIT_CRITICAL();
     uart_puts(PICO_DEFAULT_UART_INSTANCE, "Exited RTOS Critical Section\r\n");
