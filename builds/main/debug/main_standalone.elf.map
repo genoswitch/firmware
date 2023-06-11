@@ -1979,9 +1979,9 @@ Discarded input sections
                 0x0000000000000000        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .bss.uart_inst
                 0x0000000000000000        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccPDofAl.o
- .data          0x0000000000000000        0x0 /tmp/ccPDofAl.o
- .bss           0x0000000000000000        0x0 /tmp/ccPDofAl.o
+ .text          0x0000000000000000        0x0 /tmp/ccXVm5jr.o
+ .data          0x0000000000000000        0x0 /tmp/ccXVm5jr.o
+ .bss           0x0000000000000000        0x0 /tmp/ccXVm5jr.o
  .data          0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .bss           0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
@@ -2166,7 +2166,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccPDofAl.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccXVm5jr.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3320,7 +3320,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .iplt           0x000000001000ae20        0x0
  .iplt          0x000000001000ae20        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x000000001000ae20     0x2d0c
+.rodata         0x000000001000ae20     0x2bcc
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.prvSerialDisplaySystemInfo.str1.4
                 0x000000001000ae20       0xa1 CMakeFiles/main_standalone.dir/core/main.c.obj
@@ -3876,53 +3876,54 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .rodata.__bi_152.1
                 0x000000001000d94c        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.str1.4
-                0x000000001000d954      0x1d5 git/libcmake_git_version_tracking.a(git.c.obj)
-                0x000000001000db2c                . = ALIGN (0x4)
- *fill*         0x000000001000db29        0x3 
+                0x000000001000d954       0x95 git/libcmake_git_version_tracking.a(git.c.obj)
+                                         0x99 (size before relaxing)
+                0x000000001000d9ec                . = ALIGN (0x4)
+ *fill*         0x000000001000d9e9        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x000000001000db2c                . = ALIGN (0x4)
+                0x000000001000d9ec                . = ALIGN (0x4)
 
-.rel.dyn        0x000000001000db2c        0x0
- .rel.iplt      0x000000001000db2c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x000000001000d9ec        0x0
+ .rel.iplt      0x000000001000d9ec        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000001000db2c                __exidx_start = .
+                0x000000001000d9ec                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000001000db2c                __exidx_end = .
-                0x000000001000db2c                . = ALIGN (0x4)
-                0x000000001000db2c                __binary_info_start = .
+                0x000000001000d9ec                __exidx_end = .
+                0x000000001000d9ec                . = ALIGN (0x4)
+                0x000000001000d9ec                __binary_info_start = .
 
-.binary_info    0x000000001000db2c       0x2c
+.binary_info    0x000000001000d9ec       0x2c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x000000001000db2c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000d9ec        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x000000001000db30        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000d9f0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x000000001000db34        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000d9f4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x000000001000db38        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000d9f8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x000000001000db3c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000d9fc        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x000000001000db40        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000da00        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x000000001000db44        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000da04        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr142
-                0x000000001000db48        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000da08        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .binary_info.keep.__bi_ptr152
-                0x000000001000db4c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000da0c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x000000001000db50        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000da10        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x000000001000db54        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x000000001000db58                __binary_info_end = .
-                0x000000001000db58                . = ALIGN (0x4)
-                0x000000001000db58                __etext = .
+                0x000000001000da14        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000da18                __binary_info_end = .
+                0x000000001000da18                . = ALIGN (0x4)
+                0x000000001000da18                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -3931,7 +3932,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0     0x1494 load address 0x000000001000db58
+.data           0x00000000200000c0     0x1494 load address 0x000000001000da18
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -4091,33 +4092,33 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020001554                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020001554        0x0 load address 0x000000001000efec
+                0x0000000020001554        0x0 load address 0x000000001000eeac
  .tm_clone_table
                 0x0000000020001554        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020001554        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020001554        0x0 load address 0x000000001000efec
+.igot.plt       0x0000000020001554        0x0 load address 0x000000001000eeac
  .igot.plt      0x0000000020001554        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020001554        0x0 load address 0x000000001000efec
+                0x0000000020001554        0x0 load address 0x000000001000eeac
                 0x0000000020001554                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001000efec
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000eeac
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001000efec                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000eeac                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001000efec
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000eeac
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001000efec                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000eeac                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020001558    0x21158
                 0x0000000020001558                . = ALIGN (0x4)
@@ -4323,8 +4324,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001000efec        0x0
-                0x000000001000efec                __flash_binary_end = .
+.flash_end      0x000000001000eeac        0x0
+                0x000000001000eeac                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4422,7 +4423,7 @@ LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyu
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 LOAD libcore.a
-LOAD /tmp/ccPDofAl.o
+LOAD /tmp/ccXVm5jr.o
 LOAD git/libcmake_git_version_tracking.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
@@ -4578,7 +4579,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000aec       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .ARM.attributes
-                0x0000000000000b18       0x22 /tmp/ccPDofAl.o
+                0x0000000000000b18       0x22 /tmp/ccXVm5jr.o
  .ARM.attributes
                 0x0000000000000b3a       0x2c git/libcmake_git_version_tracking.a(git.c.obj)
  .ARM.attributes
@@ -5046,7 +5047,7 @@ LOAD linker stubs
  .debug_ranges  0x0000000000005d80       0x50 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mallocr.o)
  .debug_ranges  0x0000000000005dd0       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strcpy.o)
 
-.debug_line     0x0000000000000000    0x2317e
+.debug_line     0x0000000000000000    0x2317c
  .debug_line    0x0000000000000000      0x29a CMakeFiles/main_standalone.dir/core/main.c.obj
  .debug_line    0x000000000000029a       0x99 CMakeFiles/main_standalone.dir/core/feature_set.c.obj
  .debug_line    0x0000000000000333      0x110 CMakeFiles/main_standalone.dir/core/semaphores.c.obj
@@ -5111,17 +5112,17 @@ LOAD linker stubs
  .debug_line    0x000000000001eee7      0xb8d CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
  .debug_line    0x000000000001fa74     0x14fb CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .debug_line    0x0000000000020f6f      0x984 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .debug_line    0x00000000000218f3      0x11b git/libcmake_git_version_tracking.a(git.c.obj)
- .debug_line    0x0000000000021a0e       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000021a6e       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
- .debug_line    0x0000000000021b52      0x165 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-malloc.o)
- .debug_line    0x0000000000021cb7      0x8e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mallocr.o)
- .debug_line    0x0000000000022599      0x13e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mlock.o)
- .debug_line    0x00000000000226d7      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sbrkr.o)
- .debug_line    0x000000000002285a       0xb7 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strcpy.o)
- .debug_line    0x0000000000022911      0x172 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
- .debug_line    0x0000000000022a83      0x47d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-freer.o)
- .debug_line    0x0000000000022f00      0x27e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reent.o)
+ .debug_line    0x00000000000218f3      0x119 git/libcmake_git_version_tracking.a(git.c.obj)
+ .debug_line    0x0000000000021a0c       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000021a6c       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
+ .debug_line    0x0000000000021b50      0x165 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-malloc.o)
+ .debug_line    0x0000000000021cb5      0x8e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mallocr.o)
+ .debug_line    0x0000000000022597      0x13e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mlock.o)
+ .debug_line    0x00000000000226d5      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sbrkr.o)
+ .debug_line    0x0000000000022858       0xb7 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strcpy.o)
+ .debug_line    0x000000000002290f      0x172 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+ .debug_line    0x0000000000022a81      0x47d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-freer.o)
+ .debug_line    0x0000000000022efe      0x27e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reent.o)
 
 .debug_str      0x0000000000000000     0xba62
  .debug_str     0x0000000000000000      0x2b7 CMakeFiles/main_standalone.dir/core/main.c.obj
