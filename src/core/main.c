@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 // FreeRTOS
 #include "FreeRTOS.h"
 // FreeRTOS version macro (tskKERNEL_VERSION_NUMBER)
@@ -41,7 +43,8 @@ int main(void)
     printf("INCLUDES: Flashloader support!\n");
 
     // Check if we have just upgraded.
-    if (watchdog_hw->scratch[0] == FLASH_APP_UPDATED) {
+    if (watchdog_hw->scratch[0] == FLASH_APP_UPDATED)
+    {
         printf("Application has just updated!\n");
         // Reset the scratch register.
         watchdog_hw->scratch[0] = 0;

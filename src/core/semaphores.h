@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef CORE_SEMAPHORES_H_
 #define CORE_SEMAPHORES_H_
 

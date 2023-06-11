@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef TASKS_BULK_H_
 #define TASKS_BULK_H_
 

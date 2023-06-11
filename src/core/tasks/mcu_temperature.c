@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 // FreeRTOS core and task libraries
 #include "FreeRTOS.h"
 #include "task.h"

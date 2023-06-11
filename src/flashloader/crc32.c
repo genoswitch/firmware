@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #include "hardware/dma.h"
 
 // CRC32 calculation from a pointer using RP2040 DMA.

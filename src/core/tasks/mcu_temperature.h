@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef TASKS_MCU_TEMPERATURE_H_
 #define TASKS_MCU_TEMPERATURE_H_
 

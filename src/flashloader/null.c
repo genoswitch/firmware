@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 /* null.c
    This file exists to act as the 'source' for the combined binary (flashloader+main)
    It is passed as the paramater to add_executable

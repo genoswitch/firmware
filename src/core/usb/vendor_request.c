@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 // malloc, free (multi-core safe!)
 #include "pico/malloc.h"
 // memset, memcpy

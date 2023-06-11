@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef USB_TASKS_H_
 #define USB_TASKS_H_
 

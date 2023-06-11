@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 // Macros for a bitset in C.
 // https://stackoverflow.com/a/21001661
 // -> http://c-faq.com/misc/bitsets.html

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef USB_VENDOR_REQUEST_H_
 #define USB_VENDOR_REQUEST_H_
 

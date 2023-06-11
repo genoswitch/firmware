@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef FLASHLOADER_MAIN_H_
 #define FLASHLOADER_MAIN_H_
 

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #include "tusb.h"
 
 #include "ihex/record.h"

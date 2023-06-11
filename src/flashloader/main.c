@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #include "main.h"
 
 #include "crc32.h"

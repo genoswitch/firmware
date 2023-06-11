@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef FLASHLOADER_CRC32_H_
 #define FLASHLOADER_CRC32_H_
 

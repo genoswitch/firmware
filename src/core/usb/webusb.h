@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 #ifndef USB_WEBUSB_H_
 #define USB_WEBUSB_H_
 
