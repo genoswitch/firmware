@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT (TinyUSB)
+
 // Src: https://github.com/hathach/tinyusb/blob/ea098aeda1c2b9fe467041be325e55049e304ee4/examples/device/webusb_serial/src/usb_descriptors.h
 /*
  * The MIT License (MIT)

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT (TinyUSB)
+
 // Src: https://raw.githubusercontent.com/hathach/tinyusb/master/examples/device/webusb_serial/src/tusb_config.h
 /*
  * The MIT License (MIT)

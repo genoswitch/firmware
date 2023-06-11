@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT (TinyUSB)
+
 // Src: https://github.com/hathach/tinyusb/blob/ea098aeda1c2b9fe467041be325e55049e304ee4/examples/device/webusb_serial/src/usb_descriptors.c
 
 /*
@@ -323,7 +325,7 @@ char const *string_desc_arr[] =
         "Genoswitch MP CDC",               // 4: CDC Interface
         "Genoswitch MP WebUSB"             // 5: Vendor Interface
 #ifdef INCLUDES_FLASHLOADER
-        "Genoswitch MP DFU"                      // 6: DFU Interface
+        "Genoswitch MP DFU" // 6: DFU Interface
 #endif
 };
 
