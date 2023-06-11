@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT (FreeRTOS)
+
 // Src: https://github.com/FreeRTOS/FreeRTOS-SMP-Demos/blob/c84926adafd83830f75c3b59c85988a9898b7351/FreeRTOS/Demo/CORTEX_M0+_RP2040/Standard/FreeRTOSConfig.h
 // FreeRTOS RP2040 Standard (SMP) Demo
 
