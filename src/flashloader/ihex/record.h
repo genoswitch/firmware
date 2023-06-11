@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: BSD-3-Clause (rhulme/pico-flashloader)
+
 #ifndef IHEX_RECORD_H_
 #define IHEX_RECORD_H_
 
@@ -20,7 +22,8 @@ enum
     UHEX_TYPE_OTHER_DATA = 0x0E
 };
 
-enum {
+enum
+{
     SECTION_ID_APP = 0xffa1,
     SECTION_ID_FLASHLOADER = 0xffa0
 };
@@ -30,9 +33,9 @@ typedef struct
     uint8_t count;
     uint16_t addr;
     uint8_t type;
-    uint32_t ulba; // TODO: Is this uint32 or uint16?
+    uint32_t ulba;      // TODO: Is this uint32 or uint16?
     uint16_t sectionId; // Universal Hex Board ID. We are using it as a section ID.
-    uint8_t data[256]; // rhulme (max size 256bytes)
+    uint8_t data[256];  // rhulme (max size 256bytes)
 } ihexRecord;
 
 int parseRecord(const char *line, ihexRecord *record);

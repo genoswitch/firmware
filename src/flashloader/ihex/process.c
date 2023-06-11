@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: BSD-3-Clause (rhulme/pico-flashloader)
+
 // lib/pico-flashloader
 #include "flashloader.h"
 

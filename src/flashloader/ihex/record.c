@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: BSD-3-Clause (rhulme/pico-flashloader)
+
 #include "record.h"
 
 #include "util.c"
@@ -6,7 +8,8 @@
 #include "pico/mem_ops.h"
 
 // Get the exact address for the specified record.
-uint32_t getAddress(ihexRecord *record) {
+uint32_t getAddress(ihexRecord *record)
+{
     return record->ulba + record->addr;
 }
 
@@ -46,18 +49,23 @@ int parseRecord(const char *line, ihexRecord *record)
         memcpy(record->data, &data[4], data[0]);
 
         // if EXT_LIN_ADDR, set ulba
-        if (record->type == IHEX_TYPE_EXT_LIN_ADDR) {
+        if (record->type == IHEX_TYPE_EXT_LIN_ADDR)
+        {
             record->ulba = ((data[4] << 8) + data[5]) << 16;
         }
 
         // if Universal Hex Block Start, set sectionId.
-        if (record->type == UHEX_TYPE_BLOCK_START) {
+        if (record->type == UHEX_TYPE_BLOCK_START)
+        {
             // Note: Thanks to the previous memcpy, data[4] is now record->data[0]
             // Check if this record is valid. (0xCODE at index 6.)
-            if (data[6] = 0xc0 && data[7] == 0xde) {
+            if (data[6] = 0xc0 && data[7] == 0xde)
+            {
                 // Valid! Copy data[4] and data[5] (uint16_t) to the sectionId variable.
                 record->sectionId = data[5] | (data[4] << 8);
-            } else {
+            }
+            else
+            {
                 // Invalid return a failure condition.
                 return 2;
             }

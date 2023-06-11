@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: BSD-3-Clause (rhulme/pico-flashloader)
+
 // configNUM_CORES macro
 #include "FreeRTOSConfig.h"
 // If needed, include FreeRTOS task headers.
