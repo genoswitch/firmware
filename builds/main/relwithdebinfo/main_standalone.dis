@@ -1,5 +1,5 @@
 
-/home/runner/work/pico/pico/build/main_standalone.elf:     file format elf32-littlearm
+/home/runner/work/firmware/firmware/build/main_standalone.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -7,13 +7,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   1 .text         000099c0  10000100  10000100  00001100  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       000008e4  10009ac0  10009ac0  0000aac0  2**3
+  2 .rodata       00000a08  10009ac0  10009ac0  0000aac0  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .binary_info  0000002c  1000a3a4  1000a3a4  0000b3a4  2**2
+  3 .binary_info  0000002c  1000a4c8  1000a4c8  0000b4c8  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   4 .ram_vector_table 000000c0  20000000  20000000  0000d3e4  2**2
                   CONTENTS
-  5 .data         00001324  200000c0  1000a3d0  0000c0c0  2**4
+  5 .data         00001324  200000c0  1000a4f4  0000c0c0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   6 .uninitialized_data 00000000  200013e4  200013e4  0000d4a4  2**0
                   CONTENTS
@@ -41,16 +41,16 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_ranges 0000aaa0  00000000  00000000  0005a7c8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line   000274ab  00000000  00000000  00065268  2**0
+ 19 .debug_line   00027ee6  00000000  00000000  00065268  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    0000b8d8  00000000  00000000  0008c713  2**0
+ 20 .debug_str    0000baf0  00000000  00000000  0008d14e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_frame  00004420  00000000  00000000  00097fec  2**2
+ 21 .debug_frame  00004420  00000000  00000000  00098c40  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loc    0002af43  00000000  00000000  0009c40c  2**0
+ 22 .debug_loc    0002af43  00000000  00000000  0009d060  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/runner/work/pico/pico/build/main_standalone.elf:     file format elf32-littlearm
+/home/runner/work/firmware/firmware/build/main_standalone.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:
@@ -198,8 +198,8 @@ Disassembly of section .text:
 
 100001d4 <binary_info_header>:
 100001d4:	7188ebf2 	.word	0x7188ebf2
-100001d8:	1000a3a4 	.word	0x1000a3a4
-100001dc:	1000a3d0 	.word	0x1000a3d0
+100001d8:	1000a4c8 	.word	0x1000a4c8
+100001dc:	1000a4f4 	.word	0x1000a4f4
 100001e0:	10000234 	.word	0x10000234
 100001e4:	e71aa390 	.word	0xe71aa390
 
@@ -254,13 +254,13 @@ Disassembly of section .text:
 10000232:	4770      	bx	lr
 
 10000234 <data_cpy_table>:
-10000234:	1000a3d0 	.word	0x1000a3d0
+10000234:	1000a4f4 	.word	0x1000a4f4
 10000238:	200000c0 	.word	0x200000c0
 1000023c:	200013e4 	.word	0x200013e4
-10000240:	1000b6f4 	.word	0x1000b6f4
+10000240:	1000b818 	.word	0x1000b818
 10000244:	20040000 	.word	0x20040000
 10000248:	20040000 	.word	0x20040000
-1000024c:	1000b6f4 	.word	0x1000b6f4
+1000024c:	1000b818 	.word	0x1000b818
 10000250:	20041000 	.word	0x20041000
 10000254:	20041000 	.word	0x20041000
 10000258:	00000000 	.word	0x00000000
@@ -290,7 +290,7 @@ Disassembly of section .text:
 100002a0:	50520006 9da22254 1000a108              ..RPT"......
 
 100002ac <__bi_22>:
-100002ac:	50520005 68f465de 1000b6f4              ..RP.e.h....
+100002ac:	50520005 68f465de 1000b818              ..RP.e.h....
 
 100002b8 <_init>:
 100002b8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -8571,9 +8571,9 @@ Disassembly of section .text:
 10004528:	4805      	ldr	r0, [pc, #20]	; (10004540 <stdio_uart_init+0x44>)
 1000452a:	f7ff feb9 	bl	100042a0 <stdio_set_driver_enabled>
 1000452e:	bd10      	pop	{r4, pc}
-10004530:	1000a3c8 	.word	0x1000a3c8
+10004530:	1000a4ec 	.word	0x1000a4ec
 10004534:	200023f0 	.word	0x200023f0
-10004538:	1000a3cc 	.word	0x1000a3cc
+10004538:	1000a4f0 	.word	0x1000a4f0
 1000453c:	40034000 	.word	0x40034000
 10004540:	20000b30 	.word	0x20000b30
 
@@ -17516,37 +17516,37 @@ Disassembly of section .text:
 100090a8 <git_AuthorEmail>:
 100090a8:	4800      	ldr	r0, [pc, #0]	; (100090ac <git_AuthorEmail+0x4>)
 100090aa:	4770      	bx	lr
-100090ac:	1000a2f8 	.word	0x1000a2f8
+100090ac:	1000a300 	.word	0x1000a300
 
 100090b0 <git_CommitSHA1>:
 100090b0:	4800      	ldr	r0, [pc, #0]	; (100090b4 <git_CommitSHA1+0x4>)
 100090b2:	4770      	bx	lr
-100090b4:	1000a310 	.word	0x1000a310
+100090b4:	1000a318 	.word	0x1000a318
 
 100090b8 <git_CommitDate>:
 100090b8:	4800      	ldr	r0, [pc, #0]	; (100090bc <git_CommitDate+0x4>)
 100090ba:	4770      	bx	lr
-100090bc:	1000a33c 	.word	0x1000a33c
+100090bc:	1000a344 	.word	0x1000a344
 
 100090c0 <git_CommitSubject>:
 100090c0:	4800      	ldr	r0, [pc, #0]	; (100090c4 <git_CommitSubject+0x4>)
 100090c2:	4770      	bx	lr
-100090c4:	1000a358 	.word	0x1000a358
+100090c4:	1000a360 	.word	0x1000a360
 
 100090c8 <git_CommitBody>:
 100090c8:	4800      	ldr	r0, [pc, #0]	; (100090cc <git_CommitBody+0x4>)
 100090ca:	4770      	bx	lr
-100090cc:	10009b74 	.word	0x10009b74
+100090cc:	1000a37c 	.word	0x1000a37c
 
 100090d0 <git_Describe>:
 100090d0:	4800      	ldr	r0, [pc, #0]	; (100090d4 <git_Describe+0x4>)
 100090d2:	4770      	bx	lr
-100090d4:	1000a394 	.word	0x1000a394
+100090d4:	1000a4b8 	.word	0x1000a4b8
 
 100090d8 <git_Branch>:
 100090d8:	4800      	ldr	r0, [pc, #0]	; (100090dc <git_Branch+0x4>)
 100090da:	4770      	bx	lr
-100090dc:	1000a39c 	.word	0x1000a39c
+100090dc:	1000a4c0 	.word	0x1000a4c0
 
 100090e0 <calloc>:
 100090e0:	0003      	movs	r3, r0
