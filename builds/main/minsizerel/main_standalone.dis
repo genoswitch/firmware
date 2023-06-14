@@ -14758,12 +14758,12 @@ Disassembly of section .text:
 10007a30 <git_Describe>:
 10007a30:	4800      	ldr	r0, [pc, #0]	; (10007a34 <git_Describe+0x4>)
 10007a32:	4770      	bx	lr
-10007a34:	10008984 	.word	0x10008984
+10007a34:	10008986 	.word	0x10008986
 
 10007a38 <git_Branch>:
 10007a38:	4800      	ldr	r0, [pc, #0]	; (10007a3c <git_Branch+0x4>)
 10007a3a:	4770      	bx	lr
-10007a3c:	1000898c 	.word	0x1000898c
+10007a3c:	1000898e 	.word	0x1000898e
 
 10007a40 <malloc>:
 10007a40:	b510      	push	{r4, lr}
@@ -17115,7 +17115,7 @@ Disassembly of section .data:
 20000a4c:	0000001f                                ....
 
 20000a50 <ep_dir_string>:
-20000a50:	10008823 1000898e                       #.......
+20000a50:	10008823 10008990                       #.......
 
 20000a58 <_usbd_qdef>:
 20000a58:	2000232d 000c0010 00000000 00000000     -#. ............
