@@ -14733,22 +14733,22 @@ Disassembly of section .text:
 10007a08 <git_AuthorEmail>:
 10007a08:	4800      	ldr	r0, [pc, #0]	; (10007a0c <git_AuthorEmail+0x4>)
 10007a0a:	4770      	bx	lr
-10007a0c:	100088fa 	.word	0x100088fa
+10007a0c:	10008901 	.word	0x10008901
 
 10007a10 <git_CommitSHA1>:
 10007a10:	4800      	ldr	r0, [pc, #0]	; (10007a14 <git_CommitSHA1+0x4>)
 10007a12:	4770      	bx	lr
-10007a14:	1000890f 	.word	0x1000890f
+10007a14:	10008916 	.word	0x10008916
 
 10007a18 <git_CommitDate>:
 10007a18:	4800      	ldr	r0, [pc, #0]	; (10007a1c <git_CommitDate+0x4>)
 10007a1a:	4770      	bx	lr
-10007a1c:	10008938 	.word	0x10008938
+10007a1c:	1000893f 	.word	0x1000893f
 
 10007a20 <git_CommitSubject>:
 10007a20:	4800      	ldr	r0, [pc, #0]	; (10007a24 <git_CommitSubject+0x4>)
 10007a22:	4770      	bx	lr
-10007a24:	10008952 	.word	0x10008952
+10007a24:	10008959 	.word	0x10008959
 
 10007a28 <git_CommitBody>:
 10007a28:	4800      	ldr	r0, [pc, #0]	; (10007a2c <git_CommitBody+0x4>)
@@ -14758,12 +14758,12 @@ Disassembly of section .text:
 10007a30 <git_Describe>:
 10007a30:	4800      	ldr	r0, [pc, #0]	; (10007a34 <git_Describe+0x4>)
 10007a32:	4770      	bx	lr
-10007a34:	10008985 	.word	0x10008985
+10007a34:	10008984 	.word	0x10008984
 
 10007a38 <git_Branch>:
 10007a38:	4800      	ldr	r0, [pc, #0]	; (10007a3c <git_Branch+0x4>)
 10007a3a:	4770      	bx	lr
-10007a3c:	1000898d 	.word	0x1000898d
+10007a3c:	1000898c 	.word	0x1000898c
 
 10007a40 <malloc>:
 10007a40:	b510      	push	{r4, lr}
@@ -17115,7 +17115,7 @@ Disassembly of section .data:
 20000a4c:	0000001f                                ....
 
 20000a50 <ep_dir_string>:
-20000a50:	10008823 1000898f                       #.......
+20000a50:	10008823 1000898e                       #.......
 
 20000a58 <_usbd_qdef>:
 20000a58:	2000232d 000c0010 00000000 00000000     -#. ............
