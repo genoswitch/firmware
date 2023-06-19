@@ -19548,22 +19548,22 @@ Disassembly of section .text:
 1000a480 <git_AuthorEmail>:
 1000a480:	4800      	ldr	r0, [pc, #0]	; (1000a484 <git_AuthorEmail+0x4>)
 1000a482:	4770      	bx	lr
-1000a484:	1000d95c 	.word	0x1000d95c
+1000a484:	1000d964 	.word	0x1000d964
 
 1000a488 <git_CommitSHA1>:
 1000a488:	4800      	ldr	r0, [pc, #0]	; (1000a48c <git_CommitSHA1+0x4>)
 1000a48a:	4770      	bx	lr
-1000a48c:	1000d974 	.word	0x1000d974
+1000a48c:	1000d97c 	.word	0x1000d97c
 
 1000a490 <git_CommitDate>:
 1000a490:	4800      	ldr	r0, [pc, #0]	; (1000a494 <git_CommitDate+0x4>)
 1000a492:	4770      	bx	lr
-1000a494:	1000d9a0 	.word	0x1000d9a0
+1000a494:	1000d9a8 	.word	0x1000d9a8
 
 1000a498 <git_CommitSubject>:
 1000a498:	4800      	ldr	r0, [pc, #0]	; (1000a49c <git_CommitSubject+0x4>)
 1000a49a:	4770      	bx	lr
-1000a49c:	1000d9bc 	.word	0x1000d9bc
+1000a49c:	1000d9c4 	.word	0x1000d9c4
 
 1000a4a0 <git_CommitBody>:
 1000a4a0:	4800      	ldr	r0, [pc, #0]	; (1000a4a4 <git_CommitBody+0x4>)
