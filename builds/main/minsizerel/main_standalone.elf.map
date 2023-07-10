@@ -105,7 +105,7 @@ Discarded input sections
  .text.set_sys_clock_pll
                 0x0000000000000000       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .text.check_sys_clock_khz
-                0x0000000000000000       0x8c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+                0x0000000000000000       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .text.setup_default_uart
                 0x0000000000000000        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .comment       0x0000000000000000       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -333,10 +333,6 @@ Discarded input sections
                 0x0000000000000000       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim_unused
                 0x0000000000000000       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .text.busy_wait_until
-                0x0000000000000000       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .text.busy_wait_us
-                0x0000000000000000       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.busy_wait_us_32
                 0x0000000000000000       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.busy_wait_ms
@@ -408,6 +404,12 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_deinit
                 0x0000000000000000       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .text.uart_set_format
+                0x0000000000000000       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .text.uart_set_fifo_enabled
+                0x0000000000000000       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .text.uart_set_break
+                0x0000000000000000        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_set_translate_crlf
                 0x0000000000000000       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_is_readable_within_us
@@ -1245,7 +1247,7 @@ Discarded input sections
  .text.multicore_reset_core1
                 0x0000000000000000       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_victim_init
-                0x0000000000000000       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000000000000       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_start_timeout_us
                 0x0000000000000000       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_start_blocking
@@ -1254,10 +1256,14 @@ Discarded input sections
                 0x0000000000000000       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_end_blocking
                 0x0000000000000000       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.multicore_lockout_victim_is_initialized
+                0x0000000000000000        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_in_progress
                 0x0000000000000000        0x1 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_mutex
                 0x0000000000000000        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .bss.lockout_victim_initialized
+                0x0000000000000000        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
@@ -1506,9 +1512,9 @@ Discarded input sections
                 0x0000000000000000        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .bss.uart_inst
                 0x0000000000000000        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc6bnI1W.o
- .data          0x0000000000000000        0x0 /tmp/cc6bnI1W.o
- .bss           0x0000000000000000        0x0 /tmp/cc6bnI1W.o
+ .text          0x0000000000000000        0x0 /tmp/cccQIreS.o
+ .data          0x0000000000000000        0x0 /tmp/cccQIreS.o
+ .bss           0x0000000000000000        0x0 /tmp/cccQIreS.o
  .data          0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .bss           0x0000000000000000        0x0 git/libcmake_git_version_tracking.a(git.c.obj)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
@@ -1719,11 +1725,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc6bnI1W.o
+ .boot2         0x0000000010000000      0x100 /tmp/cccQIreS.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x82c8
+.text           0x0000000010000100     0x8378
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1939,857 +1945,865 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .text.add_alarm_under_lock
                 0x0000000010000f20       0xc8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000fe8      0x190 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000fe8      0x194 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010001178       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001178                alarm_pool_init_default
+                0x000000001000117c       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000117c                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x00000000100011b4       0xcc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100011b4                alarm_pool_add_alarm_at
+                0x00000000100011b8       0xcc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100011b8                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x0000000010001280       0x66 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001280                alarm_pool_cancel_alarm
- *fill*         0x00000000100012e6        0x2 
+                0x0000000010001284       0x6a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001284                alarm_pool_cancel_alarm
+ *fill*         0x00000000100012ee        0x2 
  .text.best_effort_wfe_or_timeout
-                0x00000000100012e8       0x44 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100012e8                best_effort_wfe_or_timeout
+                0x00000000100012f0       0x44 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100012f0                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x000000001000132c       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001334       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x00000000100013c0       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013c0                hardware_alarm_claim
+                0x00000000100013c8       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013c8                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100013d8       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013d8                time_us_64
+                0x00000000100013e0       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013e0                time_us_64
+ .text.busy_wait_until
+                0x00000000100013f4       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013f4                busy_wait_until
+ .text.busy_wait_us
+                0x0000000010001410       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001410                busy_wait_us
  .text.hardware_alarm_set_callback
-                0x00000000100013ec       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013ec                hardware_alarm_set_callback
+                0x000000001000143c       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000143c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001480       0xbc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001480                hardware_alarm_set_target
+                0x00000000100014d0       0xbc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100014d0                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x000000001000153c       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000153c                hardware_alarm_cancel
+                0x000000001000158c       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000158c                hardware_alarm_cancel
  .text.ph_add_child_node.isra.0
-                0x000000001000157c       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100015cc       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x000000001000159e       0x36 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100015ee       0x36 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_clear
-                0x00000000100015d4       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100015d4                ph_clear
+                0x0000000010001624       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001624                ph_clear
  .text.ph_post_alloc_init
-                0x0000000010001608        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001608                ph_post_alloc_init
+                0x0000000010001658        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001658                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001616       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001616                ph_merge_two_pass
+                0x0000000010001666       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001666                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x000000001000165e       0x52 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100016ae       0x52 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000100016b0       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100016b0                ph_remove_head
+                0x0000000010001700       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001700                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100016c4       0x6e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100016c4                ph_remove_and_free_node
- *fill*         0x0000000010001732        0x2 
+                0x0000000010001714       0x6e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001714                ph_remove_and_free_node
+ *fill*         0x0000000010001782        0x2 
+ .text.uart_write_lcr_bits_masked
+                0x0000000010001784       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_set_baudrate
-                0x0000000010001734       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010001734                uart_set_baudrate
+                0x00000000100017e8       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00000000100017e8                uart_set_baudrate
  .text.uart_init
-                0x0000000010001790       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010001790                uart_init
+                0x0000000010001840       0x90 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000000010001840                uart_init
  .text.clock_configure
-                0x0000000010001824       0xd4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001824                clock_configure
+                0x00000000100018d0       0xd8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100018d0                clock_configure
  .text.clocks_init
-                0x00000000100018f8       0xf4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100018f8                clocks_init
+                0x00000000100019a8       0xf4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100019a8                clocks_init
  .text.clock_get_hz
-                0x00000000100019ec        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100019ec                clock_get_hz
+                0x0000000010001a9c        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001a9c                clock_get_hz
  .text.pll_init
-                0x00000000100019f8       0x9c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100019f8                pll_init
+                0x0000000010001aa8       0x9c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001aa8                pll_init
  .text.watchdog_start_tick
-                0x0000000010001a94       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001a94                watchdog_start_tick
+                0x0000000010001b44       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001b44                watchdog_start_tick
  .text.xosc_init
-                0x0000000010001aa4       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001aa4                xosc_init
+                0x0000000010001b54       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001b54                xosc_init
  .text.runtime_init
-                0x0000000010001acc       0xcc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001acc                runtime_init
- .text._exit    0x0000000010001b98        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001b98                _exit
- .text._sbrk    0x0000000010001b9c       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001b9c                _sbrk
- .text.exit     0x0000000010001bcc        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001bcc                exit
- *fill*         0x0000000010001bd2        0x2 
- .text.panic    0x0000000010001bd4       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001bd4                panic
+                0x0000000010001b7c       0xcc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001b7c                runtime_init
+ .text._exit    0x0000000010001c48        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001c48                _exit
+ .text._sbrk    0x0000000010001c4c       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001c4c                _sbrk
+ .text.exit     0x0000000010001c7c        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001c7c                exit
+ *fill*         0x0000000010001c82        0x2 
+ .text.panic    0x0000000010001c84       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001c84                panic
  .text.panic_unsupported
-                0x0000000010001c04        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001c04                panic_unsupported
+                0x0000000010001cb4        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001cb4                panic_unsupported
  .text.hard_assertion_failure
-                0x0000000010001c10        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001c10                hard_assertion_failure
+                0x0000000010001cc0        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001cc0                hard_assertion_failure
  .text._out_null
-                0x0000000010001c1c        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001ccc        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010001c1e       0x7a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001cce       0x7a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010001c98       0xf0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001d48       0xf0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x0000000010001d88       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001e38       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x0000000010001e1c       0xbe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010001eda        0x2 
- .text._etoa    0x0000000010001edc      0x3e0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x00000000100022bc      0x318 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001ecc       0xbe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010001f8a        0x2 
+ .text._etoa    0x0000000010001f8c      0x3e0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x000000001000236c      0x318 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x00000000100025d4        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002684        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x00000000100025e0        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x00000000100025ee        0x2 
+                0x0000000010002690        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000269e        0x2 
  .text._vsnprintf
-                0x00000000100025f0      0x554 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100026a0      0x554 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x0000000010002b44       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010002b44                vfctprintf
+                0x0000000010002bf4       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002bf4                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010002b64       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010002b64                weak_raw_vprintf
- .text          0x0000000010002b94       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .text.clzsi    0x0000000010002ba4        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x0000000010002ba4                __wrap___clz
-                0x0000000010002ba4                __wrap___clzsi2
-                0x0000000010002ba4                __wrap___clzl
+                0x0000000010002c14       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002c14                weak_raw_vprintf
+ .text          0x0000000010002c44       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .text.clzsi    0x0000000010002c54        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010002c54                __wrap___clz
+                0x0000000010002c54                __wrap___clzsi2
+                0x0000000010002c54                __wrap___clzl
  .text.rom_func_lookup
-                0x0000000010002bb0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010002bb0                rom_func_lookup
+                0x0000000010002c60       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002c60                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010002bc0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010002bc0                rom_data_lookup
+                0x0000000010002c70       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002c70                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010002bd0       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010002bd0                rom_funcs_lookup
- *fill*         0x0000000010002bf6        0x2 
+                0x0000000010002c80       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002c80                rom_funcs_lookup
+ *fill*         0x0000000010002ca6        0x2 
  .text.__wrap___aeabi_idiv
-                0x0000000010002bf8       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010002bf8                __wrap___aeabi_idivmod
-                0x0000000010002bf8                divmod_s32s32
-                0x0000000010002bf8                div_s32s32
-                0x0000000010002bf8                __wrap___aeabi_idiv
-                0x0000000010002c00                divmod_s32s32_unsafe
-                0x0000000010002c2c                divmod_s32s32_savestate
+                0x0000000010002ca8       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010002ca8                __wrap___aeabi_idivmod
+                0x0000000010002ca8                divmod_s32s32
+                0x0000000010002ca8                div_s32s32
+                0x0000000010002ca8                __wrap___aeabi_idiv
+                0x0000000010002cb0                divmod_s32s32_unsafe
+                0x0000000010002cdc                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010002c48       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010002c48                __wrap___aeabi_uidiv
-                0x0000000010002c48                __wrap___aeabi_uidivmod
-                0x0000000010002c48                div_u32u32
-                0x0000000010002c48                divmod_u32u32
-                0x0000000010002c50                divmod_u32u32_unsafe
-                0x0000000010002c78                divmod_u32u32_savestate
+                0x0000000010002cf8       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010002cf8                __wrap___aeabi_uidiv
+                0x0000000010002cf8                __wrap___aeabi_uidivmod
+                0x0000000010002cf8                div_u32u32
+                0x0000000010002cf8                divmod_u32u32
+                0x0000000010002d00                divmod_u32u32_unsafe
+                0x0000000010002d28                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010002c94      0x424 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010002c94                div_s64s64
-                0x0000000010002c94                divmod_s64s64
-                0x0000000010002c94                __wrap___aeabi_ldivmod
-                0x0000000010002cc4                div_u64u64
-                0x0000000010002cc4                divmod_u64u64
-                0x0000000010002cc4                __wrap___aeabi_uldivmod
-                0x0000000010002cd4                divmod_u64u64_savestate
-                0x0000000010002cf4                divmod_s64s64_unsafe
-                0x0000000010002d7c                divmod_u64u64_unsafe
+                0x0000000010002d44      0x424 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010002d44                div_s64s64
+                0x0000000010002d44                divmod_s64s64
+                0x0000000010002d44                __wrap___aeabi_ldivmod
+                0x0000000010002d74                div_u64u64
+                0x0000000010002d74                divmod_u64u64
+                0x0000000010002d74                __wrap___aeabi_uldivmod
+                0x0000000010002d84                divmod_u64u64_savestate
+                0x0000000010002da4                divmod_s64s64_unsafe
+                0x0000000010002e2c                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x00000000100030b8       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100030b8                __wrap___aeabi_drsub
-                0x00000000100030be                __wrap___aeabi_dsub
-                0x00000000100030d0                __wrap___aeabi_dadd
-                0x00000000100030e2                __wrap___aeabi_ddiv
-                0x000000001000311e                __wrap___aeabi_dmul
+                0x0000000010003168       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003168                __wrap___aeabi_drsub
+                0x000000001000316e                __wrap___aeabi_dsub
+                0x0000000010003180                __wrap___aeabi_dadd
+                0x0000000010003192                __wrap___aeabi_ddiv
+                0x00000000100031ce                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003138       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003138                __wrap___aeabi_cdrcmple
-                0x0000000010003148                __wrap___aeabi_cdcmple
-                0x0000000010003148                __wrap___aeabi_cdcmpeq
+                0x00000000100031e8       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100031e8                __wrap___aeabi_cdrcmple
+                0x00000000100031f8                __wrap___aeabi_cdcmple
+                0x00000000100031f8                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x00000000100031a4        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031a4                __wrap___aeabi_dcmplt
+                0x0000000010003254        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003254                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x00000000100031b0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031b0                __wrap___aeabi_dcmple
+                0x0000000010003260       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003260                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x00000000100031c0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031c0                __wrap___aeabi_dcmpge
+                0x0000000010003270       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003270                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x00000000100031d0        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031d0                __wrap___aeabi_dcmpgt
+                0x0000000010003280        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003280                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x00000000100031da       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031da                __wrap___aeabi_dcmpun
- *fill*         0x00000000100031f6        0x2 
+                0x000000001000328a       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000328a                __wrap___aeabi_dcmpun
+ *fill*         0x00000000100032a6        0x2 
  .text.__wrap___aeabi_i2d
-                0x00000000100031f8       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100031f8                __wrap___aeabi_ui2d
-                0x0000000010003200                __wrap___aeabi_i2d
+                0x00000000100032a8       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100032a8                __wrap___aeabi_ui2d
+                0x00000000100032b0                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010003230       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003230                __wrap___aeabi_d2iz
-                0x0000000010003230                double2int_z
+                0x00000000100032e0       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100032e0                __wrap___aeabi_d2iz
+                0x00000000100032e0                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003278       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003278                double2uint
-                0x0000000010003278                __wrap___aeabi_d2uiz
+                0x0000000010003328       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003328                double2uint
+                0x0000000010003328                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010003290       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003290                __aeabi_double_init
+                0x0000000010003340       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003340                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x00000000100032e8       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100032e8                double_table_shim_on_use_helper
+                0x0000000010003398       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003398                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010003314       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003314                drsub_shim
-                0x000000001000331a                dsub_shim
+                0x00000000100033c4       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100033c4                drsub_shim
+                0x00000000100033ca                dsub_shim
  .text.dadd_shim
-                0x0000000010003324      0x15c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003324                dadd_shim
+                0x00000000100033d4      0x15c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100033d4                dadd_shim
  .text.dmul_shim
-                0x0000000010003480      0x15c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003480                dmul_shim
+                0x0000000010003530      0x15c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003530                dmul_shim
  .text.ddiv_shim
-                0x00000000100035dc      0x1b0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100035dc                ddiv_shim
+                0x000000001000368c      0x1b0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000368c                ddiv_shim
  .text.double2uint_shim
-                0x000000001000378c        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000378c                double2uint_shim
-                0x000000001000378e                double2ufix_shim
- *fill*         0x000000001000379a        0x2 
+                0x000000001000383c        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000383c                double2uint_shim
+                0x000000001000383e                double2ufix_shim
+ *fill*         0x000000001000384a        0x2 
  .text.double2uint64_shim
-                0x000000001000379c       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000379c                double2uint64_shim
-                0x000000001000379e                double2ufix64_shim
-                0x00000000100037be                d2fix_a
+                0x000000001000384c       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000384c                double2uint64_shim
+                0x000000001000384e                double2ufix64_shim
+                0x000000001000386e                d2fix_a
  .text.dunpacks
-                0x000000001000380c       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000380c                dunpacks
+                0x00000000100038bc       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100038bc                dunpacks
  .text.__aeabi_lmul
-                0x0000000010003848       0x32 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010003848                __wrap___aeabi_lmul
- *fill*         0x000000001000387a        0x2 
+                0x00000000100038f8       0x32 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x00000000100038f8                __wrap___aeabi_lmul
+ *fill*         0x000000001000392a        0x2 
  .text.__aeabi_float_init
-                0x000000001000387c       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x000000001000387c                __aeabi_float_init
+                0x000000001000392c       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000001000392c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100038d8       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100038d8                float_table_shim_on_use_helper
+                0x0000000010003988       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010003988                float_table_shim_on_use_helper
  .text.check_alloc
-                0x0000000010003904       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000100039b4       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .text.__wrap_malloc
-                0x0000000010003924       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-                0x0000000010003924                __wrap_malloc
+                0x00000000100039d4       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000100039d4                __wrap_malloc
  .text.__wrap_free
-                0x0000000010003950       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-                0x0000000010003950                __wrap_free
- .text          0x0000000010003970       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010003970                __aeabi_mem_init
- .text.memset   0x0000000010003980        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010003980                __wrap_memset
- .text.memcpy   0x000000001000398c        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x000000001000398c                __wrap___aeabi_memcpy
-                0x000000001000398c                __wrap_memcpy
+                0x0000000010003a00       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x0000000010003a00                __wrap_free
+ .text          0x0000000010003a20       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010003a20                __aeabi_mem_init
+ .text.memset   0x0000000010003a30        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010003a30                __wrap_memset
+ .text.memcpy   0x0000000010003a3c        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010003a3c                __wrap___aeabi_memcpy
+                0x0000000010003a3c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010003998        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x00000000100039a6        0x2 
+                0x0000000010003a48        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010003a56        0x2 
  .text.stdio_out_chars_crlf
-                0x00000000100039a8       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003a58       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush.part.0
-                0x0000000010003a28       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003ad8       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010003a60       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010003a7e        0x2 
+                0x0000000010003b10       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010003b2e        0x2 
  .text.stdout_serialize_begin
-                0x0000000010003a80       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003a80                stdout_serialize_begin
+                0x0000000010003b30       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003b30                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x0000000010003aac       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003aac                stdout_serialize_end
+                0x0000000010003b5c       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003b5c                stdout_serialize_end
  .text.stdio_put_string.isra.0
-                0x0000000010003abc       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003b6c       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010003b3c       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003b3c                __wrap_putchar
+                0x0000000010003bec       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003bec                __wrap_putchar
  .text.stdio_set_driver_enabled
-                0x0000000010003b54       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003b54                stdio_set_driver_enabled
+                0x0000000010003c04       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003c04                stdio_set_driver_enabled
  .text.stdio_flush
-                0x0000000010003b80       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003b80                stdio_flush
+                0x0000000010003c30       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003c30                stdio_flush
  .text.__wrap_puts
-                0x0000000010003b9c       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003b9c                __wrap_puts
- *fill*         0x0000000010003bba        0x2 
+                0x0000000010003c4c       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003c4c                __wrap_puts
+ *fill*         0x0000000010003c6a        0x2 
  .text.__wrap_vprintf
-                0x0000000010003bbc       0x44 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003bbc                __wrap_vprintf
+                0x0000000010003c6c       0x44 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003c6c                __wrap_vprintf
  .text.__wrap_printf
-                0x0000000010003c00       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003c00                __wrap_printf
+                0x0000000010003cb0       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003cb0                __wrap_printf
  .text.stdio_init_all
-                0x0000000010003c16        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010003c16                stdio_init_all
+                0x0000000010003cc6        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010003cc6                stdio_init_all
  .text.on_uart_rx
-                0x0000000010003c20       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003cd0       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x0000000010003c48       0x7c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003cf8       0x7c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010003cc4       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010003cc4                stdio_uart_in_chars
+                0x0000000010003d74       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003d74                stdio_uart_in_chars
  .text.stdio_uart_out_chars
-                0x0000000010003d18       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003dc8       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init_full
-                0x0000000010003d68       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010003d68                stdio_uart_init_full
+                0x0000000010003e18       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003e18                stdio_uart_init_full
  .text.stdio_uart_init
-                0x0000000010003da4       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010003da4                stdio_uart_init
+                0x0000000010003e54       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010003e54                stdio_uart_init
  .text.adc_init
-                0x0000000010003dcc       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x0000000010003dcc                adc_init
+                0x0000000010003e7c       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x0000000010003e7c                adc_init
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010003e00       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010003eb0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id
-                0x0000000010003e10       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010003e10                pico_get_unique_board_id
+                0x0000000010003ec0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010003ec0                pico_get_unique_board_id
  .text.flash_get_unique_id
-                0x0000000010003e20       0x42 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010003e20                flash_get_unique_id
+                0x0000000010003ed0       0x42 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010003ed0                flash_get_unique_id
  .text.vPortSVCHandler
-                0x0000000010003e62        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003e62                vPortSVCHandler
- *fill*         0x0000000010003e64        0xc 
+                0x0000000010003f12        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010003f12                vPortSVCHandler
+ *fill*         0x0000000010003f14        0xc 
  .text.vPortStartFirstTask
-                0x0000000010003e70       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
- *fill*         0x0000000010003ea8        0x8 
+                0x0000000010003f20       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+ *fill*         0x0000000010003f58        0x8 
  .text.xPortPendSVHandler
-                0x0000000010003eb0       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003eb0                xPortPendSVHandler
+                0x0000000010003f60       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010003f60                xPortPendSVHandler
  .text.xPortSysTickHandler
-                0x0000000010003f28       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003f28                xPortSysTickHandler
+                0x0000000010003fd8       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010003fd8                xPortSysTickHandler
  .text.prvTaskExitError
-                0x0000000010003f54        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
- *fill*         0x0000000010003f5a        0x2 
+                0x0000000010004004        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+ *fill*         0x000000001000400a        0x2 
  .text.prvFIFOInterruptHandler
-                0x0000000010003f5c       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x000000001000400c       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
  .text.pxPortInitialiseStack
-                0x0000000010003f80       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003f80                pxPortInitialiseStack
+                0x0000000010004030       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004030                pxPortInitialiseStack
  .text.vPortYield
-                0x0000000010003fa0       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003fa0                vPortYield
+                0x0000000010004050       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004050                vPortYield
  .text.vPortEnableInterrupts
-                0x0000000010003fb8       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003fb8                vPortEnableInterrupts
+                0x0000000010004068       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004068                vPortEnableInterrupts
  .text.vYieldCore
-                0x0000000010003fe8        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003fe8                vYieldCore
- *fill*         0x0000000010003ff2        0x2 
+                0x0000000010004098        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004098                vYieldCore
+ *fill*         0x00000000100040a2        0x2 
  .text.vPortSetupTimerInterrupt
-                0x0000000010003ff4       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010003ff4                vPortSetupTimerInterrupt
+                0x00000000100040a4       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x00000000100040a4                vPortSetupTimerInterrupt
  .text.xPortStartSchedulerOnCore.isra.0
-                0x0000000010004028       0xa0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x00000000100040d8       0xa0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
  .text.prvDisableInterruptsAndPortStartSchedulerOnCore
-                0x00000000100040c8        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004178        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
  .text.xPortStartScheduler
-                0x00000000100040d4       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x00000000100040d4                xPortStartScheduler
+                0x0000000010004184       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004184                xPortStartScheduler
  .text.ulPortLockGetCurrentOwnerId
-                0x00000000100040fc       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x00000000100040fc                ulPortLockGetCurrentOwnerId
+                0x00000000100041ac       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x00000000100041ac                ulPortLockGetCurrentOwnerId
  .text.vPortLockInternalSpinUnlockWithWait
-                0x000000001000412c       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x000000001000412c                vPortLockInternalSpinUnlockWithWait
+                0x00000000100041dc       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x00000000100041dc                vPortLockInternalSpinUnlockWithWait
  .text.vPortLockInternalSpinUnlockWithNotify
-                0x0000000010004190       0x7c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x0000000010004190                vPortLockInternalSpinUnlockWithNotify
+                0x0000000010004240       0x7c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004240                vPortLockInternalSpinUnlockWithNotify
  .text.xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
-                0x000000001000420c       0xd4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
-                0x000000001000420c                xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
+                0x00000000100042bc       0xd4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x00000000100042bc                xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
  .text.startup.prvRuntimeInitializer
-                0x00000000100042e0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
+                0x0000000010004390       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/ThirdParty/GCC/RP2040/port.c.obj
  .text.xEventGroupCreate
-                0x00000000100042f0       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
-                0x00000000100042f0                xEventGroupCreate
+                0x00000000100043a0       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
+                0x00000000100043a0                xEventGroupCreate
  .text.xEventGroupWaitBits
-                0x0000000010004308       0xa2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
-                0x0000000010004308                xEventGroupWaitBits
+                0x00000000100043b8       0xa2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
+                0x00000000100043b8                xEventGroupWaitBits
  .text.xEventGroupSetBits
-                0x00000000100043aa       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
-                0x00000000100043aa                xEventGroupSetBits
+                0x000000001000445a       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
+                0x000000001000445a                xEventGroupSetBits
  .text.vEventGroupSetBitsCallback
-                0x0000000010004412        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
-                0x0000000010004412                vEventGroupSetBitsCallback
- *fill*         0x000000001000441a        0x2 
+                0x00000000100044c2        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
+                0x00000000100044c2                vEventGroupSetBitsCallback
+ *fill*         0x00000000100044ca        0x2 
  .text.xEventGroupSetBitsFromISR
-                0x000000001000441c       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
-                0x000000001000441c                xEventGroupSetBitsFromISR
+                0x00000000100044cc       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/event_groups.c.obj
+                0x00000000100044cc                xEventGroupSetBitsFromISR
  .text.vListInitialise
-                0x0000000010004430       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
-                0x0000000010004430                vListInitialise
+                0x00000000100044e0       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
+                0x00000000100044e0                vListInitialise
  .text.vListInitialiseItem
-                0x0000000010004446        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
-                0x0000000010004446                vListInitialiseItem
+                0x00000000100044f6        0x6 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
+                0x00000000100044f6                vListInitialiseItem
  .text.vListInsertEnd
-                0x000000001000444c       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
-                0x000000001000444c                vListInsertEnd
+                0x00000000100044fc       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
+                0x00000000100044fc                vListInsertEnd
  .text.vListInsert
-                0x0000000010004464       0x2e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
-                0x0000000010004464                vListInsert
+                0x0000000010004514       0x2e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
+                0x0000000010004514                vListInsert
  .text.uxListRemove
-                0x0000000010004492       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
-                0x0000000010004492                uxListRemove
+                0x0000000010004542       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/list.c.obj
+                0x0000000010004542                uxListRemove
  .text.prvIsQueueEmpty
-                0x00000000100044b2       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004562       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
  .text.prvCopyDataToQueue
-                0x00000000100044c6       0x76 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004576       0x76 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
  .text.prvNotifyQueueSetContainer
-                0x000000001000453c       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x00000000100045ec       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
  .text.prvCopyDataFromQueue
-                0x0000000010004584       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004634       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
  .text.prvUnlockQueue
-                0x00000000100045a8       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004658       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
  .text.xQueueGenericReset
-                0x0000000010004620       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x0000000010004620                xQueueGenericReset
+                0x00000000100046d0       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x00000000100046d0                xQueueGenericReset
  .text.xQueueGenericCreate
-                0x0000000010004680       0x3a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x0000000010004680                xQueueGenericCreate
+                0x0000000010004730       0x3a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004730                xQueueGenericCreate
  .text.xQueueGenericSend
-                0x00000000100046ba      0x100 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x00000000100046ba                xQueueGenericSend
+                0x000000001000476a      0x100 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x000000001000476a                xQueueGenericSend
  .text.xQueueCreateMutex
-                0x00000000100047ba       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x00000000100047ba                xQueueCreateMutex
+                0x000000001000486a       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x000000001000486a                xQueueCreateMutex
  .text.xQueueGenericSendFromISR
-                0x00000000100047de       0x90 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x00000000100047de                xQueueGenericSendFromISR
+                0x000000001000488e       0x90 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x000000001000488e                xQueueGenericSendFromISR
  .text.xQueueReceive
-                0x000000001000486e       0xe2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x000000001000486e                xQueueReceive
+                0x000000001000491e       0xe2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x000000001000491e                xQueueReceive
  .text.xQueueSemaphoreTake
-                0x0000000010004950      0x11a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x0000000010004950                xQueueSemaphoreTake
- *fill*         0x0000000010004a6a        0x2 
+                0x0000000010004a00      0x11a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004a00                xQueueSemaphoreTake
+ *fill*         0x0000000010004b1a        0x2 
  .text.vQueueAddToRegistry
-                0x0000000010004a6c       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x0000000010004a6c                vQueueAddToRegistry
+                0x0000000010004b1c       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004b1c                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x0000000010004a90       0x4a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
-                0x0000000010004a90                vQueueWaitForMessageRestricted
- *fill*         0x0000000010004ada        0x2 
+                0x0000000010004b40       0x4a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/queue.c.obj
+                0x0000000010004b40                vQueueWaitForMessageRestricted
+ *fill*         0x0000000010004b8a        0x2 
  .text.prvMinimalIdleTask
-                0x0000000010004adc       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004b8c       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.vPortRecursiveLock
-                0x0000000010004af0       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004ba0       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.prvResetNextTaskUnblockTime
-                0x0000000010004b58       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004c08       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.prvYieldCore
-                0x0000000010004b7c       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004c2c       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.prvYieldForTask
-                0x0000000010004bc8       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004c78       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.xTaskGetTickCount
-                0x0000000010004c28        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004c28                xTaskGetTickCount
+                0x0000000010004cd8        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004cd8                xTaskGetTickCount
  .text.vTaskSwitchContext
-                0x0000000010004c34      0x198 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004c34                vTaskSwitchContext
+                0x0000000010004ce4      0x198 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004ce4                vTaskSwitchContext
  .text.xTaskRemoveFromEventList
-                0x0000000010004dcc       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004dcc                xTaskRemoveFromEventList
+                0x0000000010004e7c       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004e7c                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x0000000010004e3c       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004e3c                vTaskInternalSetTimeOutState
+                0x0000000010004eec       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004eec                vTaskInternalSetTimeOutState
  .text.vTaskMissedYield
-                0x0000000010004e54       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004e54                vTaskMissedYield
+                0x0000000010004f04       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004f04                vTaskMissedYield
  .text.xTaskGetCurrentTaskHandle
-                0x0000000010004e68       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004e68                xTaskGetCurrentTaskHandle
+                0x0000000010004f18       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004f18                xTaskGetCurrentTaskHandle
  .text.prvAddCurrentTaskToDelayedList
-                0x0000000010004e84       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004f34       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.prvCheckForRunStateChange.part.0
-                0x0000000010004f0c       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010004fbc       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.vTaskSuspendAll
-                0x0000000010004f94       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010004f94                vTaskSuspendAll
+                0x0000000010005044       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005044                vTaskSuspendAll
  .text.vTaskPlaceOnEventList
-                0x0000000010005000       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005000                vTaskPlaceOnEventList
+                0x00000000100050b0       0x1e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100050b0                vTaskPlaceOnEventList
  .text.vTaskPlaceOnUnorderedEventList
-                0x000000001000501e       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x000000001000501e                vTaskPlaceOnUnorderedEventList
+                0x00000000100050ce       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100050ce                vTaskPlaceOnUnorderedEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x000000001000504a       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x000000001000504a                vTaskPlaceOnEventListRestricted
- *fill*         0x0000000010005072        0x2 
+                0x00000000100050fa       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100050fa                vTaskPlaceOnEventListRestricted
+ *fill*         0x0000000010005122        0x2 
  .text.xTaskPriorityInherit
-                0x0000000010005074       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005074                xTaskPriorityInherit
+                0x0000000010005124       0x88 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005124                xTaskPriorityInherit
  .text.xTaskPriorityDisinherit
-                0x00000000100050fc       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100050fc                xTaskPriorityDisinherit
+                0x00000000100051ac       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100051ac                xTaskPriorityDisinherit
  .text.vTaskPriorityDisinheritAfterTimeout
-                0x0000000010005150       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005150                vTaskPriorityDisinheritAfterTimeout
+                0x0000000010005200       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005200                vTaskPriorityDisinheritAfterTimeout
  .text.vTaskYieldWithinAPI
-                0x00000000100051b4       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100051b4                vTaskYieldWithinAPI
+                0x0000000010005264       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005264                vTaskYieldWithinAPI
  .text.vTaskEnterCritical
-                0x00000000100051dc       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100051dc                vTaskEnterCritical
+                0x000000001000528c       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x000000001000528c                vTaskEnterCritical
  .text.vTaskExitCritical
-                0x0000000010005250       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005250                vTaskExitCritical
+                0x0000000010005300       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005300                vTaskExitCritical
  .text.prvIdleTask
-                0x00000000100052c8       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005378       0x6c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .text.xTaskCreateAffinitySet
-                0x0000000010005334      0x1e0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005334                xTaskCreateAffinitySet
+                0x00000000100053e4      0x1e0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100053e4                xTaskCreateAffinitySet
  .text.xTaskCreate
-                0x0000000010005514       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005514                xTaskCreate
+                0x00000000100055c4       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100055c4                xTaskCreate
  .text.vTaskStartScheduler
-                0x000000001000552c       0xa8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x000000001000552c                vTaskStartScheduler
+                0x00000000100055dc       0xa8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100055dc                vTaskStartScheduler
  .text.xTaskIncrementTick
-                0x00000000100055d4      0x138 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100055d4                xTaskIncrementTick
+                0x0000000010005684      0x138 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005684                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x000000001000570c       0xd0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x000000001000570c                xTaskResumeAll
+                0x00000000100057bc       0xd0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100057bc                xTaskResumeAll
  .text.vTaskDelay
-                0x00000000100057dc       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100057dc                vTaskDelay
- *fill*         0x00000000100057fe        0x2 
+                0x000000001000588c       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x000000001000588c                vTaskDelay
+ *fill*         0x00000000100058ae        0x2 
  .text.vTaskRemoveFromUnorderedEventList
-                0x0000000010005800       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005800                vTaskRemoveFromUnorderedEventList
+                0x00000000100058b0       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100058b0                vTaskRemoveFromUnorderedEventList
  .text.xTaskCheckForTimeOut
-                0x0000000010005850       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005850                xTaskCheckForTimeOut
+                0x0000000010005900       0x70 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005900                xTaskCheckForTimeOut
  .text.xTaskGetSchedulerState
-                0x00000000100058c0       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100058c0                xTaskGetSchedulerState
+                0x0000000010005970       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x0000000010005970                xTaskGetSchedulerState
  .text.uxTaskResetEventItemValue
-                0x00000000100058ec       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x00000000100058ec                uxTaskResetEventItemValue
+                0x000000001000599c       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x000000001000599c                uxTaskResetEventItemValue
  .text.pvTaskIncrementMutexHeldCount
-                0x0000000010005908       0x1a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
-                0x0000000010005908                pvTaskIncrementMutexHeldCount
- *fill*         0x0000000010005922        0x2 
+                0x00000000100059b8       0x1a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100059b8                pvTaskIncrementMutexHeldCount
+ *fill*         0x00000000100059d2        0x2 
  .text.prvCheckForValidListAndQueue
-                0x0000000010005924       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x00000000100059d4       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .text.prvInsertTimerInActiveList
-                0x0000000010005980       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005a30       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .text.xTimerCreateTimerTask
-                0x00000000100059bc       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
-                0x00000000100059bc                xTimerCreateTimerTask
+                0x0000000010005a6c       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005a6c                xTimerCreateTimerTask
  .text.xTimerGenericCommandFromTask
-                0x00000000100059f4       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
-                0x00000000100059f4                xTimerGenericCommandFromTask
+                0x0000000010005aa4       0x38 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005aa4                xTimerGenericCommandFromTask
  .text.prvSampleTimeNow
-                0x0000000010005a2c       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005adc       0x94 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .text.prvTimerTask
-                0x0000000010005ac0      0x174 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005b70      0x174 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .text.xTimerPendFunctionCallFromISR
-                0x0000000010005c34       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
-                0x0000000010005c34                xTimerPendFunctionCallFromISR
+                0x0000000010005ce4       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x0000000010005ce4                xTimerPendFunctionCallFromISR
  .text.exception_get_vtable_handler
-                0x0000000010005c5c       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
-                0x0000000010005c5c                exception_get_vtable_handler
+                0x0000000010005d0c       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+                0x0000000010005d0c                exception_get_vtable_handler
  .text.exception_set_exclusive_handler
-                0x0000000010005c6c       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
-                0x0000000010005c6c                exception_set_exclusive_handler
+                0x0000000010005d1c       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+                0x0000000010005d1c                exception_set_exclusive_handler
  .text.multicore_fifo_pop_blocking_inline
-                0x0000000010005cb4       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005d64       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_trampoline
-                0x0000000010005cc8        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005d78        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x0000000010005cca        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005cca                core1_wrapper
+                0x0000000010005d7a        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005d7a                core1_wrapper
  .text.multicore_fifo_push_blocking_inline
-                0x0000000010005cd6       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005d86       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_launch_core1_raw
-                0x0000000010005ce8       0x6a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005ce8                multicore_launch_core1_raw
- *fill*         0x0000000010005d52        0x2 
+                0x0000000010005d98       0x6a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005d98                multicore_launch_core1_raw
+ *fill*         0x0000000010005e02        0x2 
  .text.multicore_launch_core1_with_stack
-                0x0000000010005d54       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005d54                multicore_launch_core1_with_stack
+                0x0000000010005e04       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005e04                multicore_launch_core1_with_stack
  .text.multicore_launch_core1
-                0x0000000010005d88       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005d88                multicore_launch_core1
+                0x0000000010005e38       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005e38                multicore_launch_core1
  .text.prvInsertBlockIntoFreeList
-                0x0000000010005da8       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
+                0x0000000010005e58       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
  .text.pvPortMalloc
-                0x0000000010005df0      0x110 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
-                0x0000000010005df0                pvPortMalloc
+                0x0000000010005ea0      0x110 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
+                0x0000000010005ea0                pvPortMalloc
  .text.vPortFree
-                0x0000000010005f00       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
-                0x0000000010005f00                vPortFree
+                0x0000000010005fb0       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/portable/MemMang/heap_4.c.obj
+                0x0000000010005fb0                vPortFree
  .text.hw_endpoint_init
-                0x0000000010005f4c       0xe4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005ffc       0xe4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x0000000010006030        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006030                dcd_int_enable
+                0x00000000100060e0        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100060e0                dcd_int_enable
  .text.dcd_set_address
-                0x000000001000603c       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000603c                dcd_set_address
+                0x00000000100060ec       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100060ec                dcd_set_address
  .text.dcd_connect
-                0x0000000010006050       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006050                dcd_connect
+                0x0000000010006100       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006100                dcd_connect
  .text.dcd_init
-                0x0000000010006060       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006060                dcd_init
+                0x0000000010006110       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006110                dcd_init
  .text.dcd_edpt0_status_complete
-                0x00000000100060c4       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100060c4                dcd_edpt0_status_complete
+                0x0000000010006174       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006174                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x00000000100060dc       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100060dc                dcd_edpt_open
+                0x000000001000618c       0x20 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000618c                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x00000000100060fc        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100060fc                dcd_edpt_close_all
+                0x00000000100061ac        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100061ac                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x0000000010006104       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006104                dcd_edpt_xfer
+                0x00000000100061b4       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100061b4                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010006128       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006128                dcd_edpt_stall
+                0x00000000100061d8       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100061d8                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x000000001000615c       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000615c                dcd_edpt_clear_stall
+                0x000000001000620c       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000620c                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x0000000010006188       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010006188                rp2040_usb_init
+                0x0000000010006238       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010006238                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x00000000100061d4       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100061d4                hw_endpoint_xfer_start
+                0x0000000010006284       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010006284                hw_endpoint_xfer_start
  .text.critical_section_exit
-                0x0000000010006220       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100062d0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .text.get_driver
-                0x0000000010006230       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100062e0       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .text.critical_section_enter_blocking
-                0x0000000010006270       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006320       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .text.invoke_class_control
-                0x0000000010006286       0x1a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006336       0x1a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .text.configuration_reset
-                0x00000000100062a0       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006350       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .text.tud_mounted
-                0x00000000100062f0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100062f0                tud_mounted
+                0x00000000100063a0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100063a0                tud_mounted
  .text.tud_suspended
-                0x0000000010006300       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006300                tud_suspended
+                0x00000000100063b0       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100063b0                tud_suspended
  .text.tud_init
-                0x0000000010006310       0x9c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006310                tud_init
+                0x00000000100063c0       0x9c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100063c0                tud_init
  .text.usbd_edpt_open
-                0x00000000100063ac       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100063ac                usbd_edpt_open
+                0x000000001000645c       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000645c                usbd_edpt_open
  .text.usbd_open_edpt_pair
-                0x00000000100063e0       0x4e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100063e0                usbd_open_edpt_pair
- *fill*         0x000000001000642e        0x2 
+                0x0000000010006490       0x4e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006490                usbd_open_edpt_pair
+ *fill*         0x00000000100064de        0x2 
  .text.usbd_edpt_claim
-                0x0000000010006430       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006430                usbd_edpt_claim
+                0x00000000100064e0       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064e0                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010006454       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006454                usbd_edpt_release
+                0x0000000010006504       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006504                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010006478       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006478                usbd_edpt_xfer
+                0x0000000010006528       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006528                usbd_edpt_xfer
  .text.usbd_edpt_stall
-                0x00000000100064c0       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100064c0                usbd_edpt_stall
+                0x0000000010006570       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006570                usbd_edpt_stall
  .text.usbd_edpt_clear_stall
-                0x00000000100064fc       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100064fc                usbd_edpt_clear_stall
+                0x00000000100065ac       0x3c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100065ac                usbd_edpt_clear_stall
  .text.usbd_edpt_stalled
-                0x0000000010006538       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006538                usbd_edpt_stalled
+                0x00000000100065e8       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100065e8                usbd_edpt_stalled
  .text.tud_task_ext
-                0x0000000010006554      0x528 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006554                tud_task_ext
+                0x0000000010006604      0x528 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006604                tud_task_ext
  .text._data_stage_xact
-                0x0000000010006a7c       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006b2c       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
  .text._status_stage_xact.isra.0
-                0x0000000010006ad4       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006b84       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
  .text.tud_control_status
-                0x0000000010006ae8       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006ae8                tud_control_status
+                0x0000000010006b98       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006b98                tud_control_status
  .text.tud_control_xfer
-                0x0000000010006b0c       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006b0c                tud_control_xfer
+                0x0000000010006bbc       0x54 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006bbc                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010006b60       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006b60                usbd_control_reset
+                0x0000000010006c10       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006c10                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010006b74        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006b74                usbd_control_set_complete_callback
+                0x0000000010006c24        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006c24                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010006b80       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006b80                usbd_control_set_request
+                0x0000000010006c30       0x1c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006c30                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006b9c       0xa4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006b9c                usbd_control_xfer_cb
+                0x0000000010006c4c       0xa4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006c4c                usbd_control_xfer_cb
  .text._prep_out_transaction.isra.0
-                0x0000000010006c40       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006cf0       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .text.tud_cdc_n_connected
-                0x0000000010006c80       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006c80                tud_cdc_n_connected
+                0x0000000010006d30       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006d30                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010006cb0       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006cb0                tud_cdc_n_available
+                0x0000000010006d60       0x18 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006d60                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010006cc8       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006cc8                tud_cdc_n_read
+                0x0000000010006d78       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006d78                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010006cf0       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006cf0                tud_cdc_n_write_flush
+                0x0000000010006da0       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006da0                tud_cdc_n_write_flush
  .text.cdcd_init
-                0x0000000010006d68       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006d68                cdcd_init
+                0x0000000010006e18       0x78 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006e18                cdcd_init
  .text.cdcd_reset
-                0x0000000010006de0       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006de0                cdcd_reset
+                0x0000000010006e90       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006e90                cdcd_reset
  .text.cdcd_open
-                0x0000000010006e10       0xa4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006e10                cdcd_open
+                0x0000000010006ec0       0xa4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006ec0                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006eb4       0xd8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006eb4                cdcd_control_xfer_cb
+                0x0000000010006f64       0xd8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006f64                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010006f8c       0xe4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006f8c                cdcd_xfer_cb
+                0x000000001000703c       0xe4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000703c                cdcd_xfer_cb
  .text._prep_out_transaction
-                0x0000000010007070       0x32 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
- *fill*         0x00000000100070a2        0x2 
+                0x0000000010007120       0x32 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+ *fill*         0x0000000010007152        0x2 
  .text.tud_vendor_n_write_flush
-                0x00000000100070a4       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x00000000100070a4                tud_vendor_n_write_flush
+                0x0000000010007154       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010007154                tud_vendor_n_write_flush
  .text.tud_vendor_n_write
-                0x0000000010007118       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010007118                tud_vendor_n_write
+                0x00000000100071c8       0x34 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x00000000100071c8                tud_vendor_n_write
  .text.vendord_init
-                0x000000001000714c       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x000000001000714c                vendord_init
+                0x00000000100071fc       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x00000000100071fc                vendord_init
  .text.vendord_reset
-                0x00000000100071b0       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x00000000100071b0                vendord_reset
+                0x0000000010007260       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010007260                vendord_reset
  .text.vendord_open
-                0x00000000100071d4       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x00000000100071d4                vendord_open
+                0x0000000010007284       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010007284                vendord_open
  .text.vendord_xfer_cb
-                0x0000000010007254       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010007254                vendord_xfer_cb
+                0x0000000010007304       0x5c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010007304                vendord_xfer_cb
  .text.tu_edpt_claim
-                0x00000000100072b0       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
-                0x00000000100072b0                tu_edpt_claim
+                0x0000000010007360       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
+                0x0000000010007360                tu_edpt_claim
  .text.tu_edpt_release
-                0x0000000010007300       0x36 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007300                tu_edpt_release
- *fill*         0x0000000010007336        0x2 
+                0x00000000100073b0       0x36 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
+                0x00000000100073b0                tu_edpt_release
+ *fill*         0x00000000100073e6        0x2 
  .text.tu_edpt_validate
-                0x0000000010007338       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007338                tu_edpt_validate
+                0x00000000100073e8       0x60 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
+                0x00000000100073e8                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010007398       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007398                tu_edpt_bind_driver
+                0x0000000010007448       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/tusb.c.obj
+                0x0000000010007448                tu_edpt_bind_driver
  .text.advance_index
-                0x00000000100073be       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000746e       0x16 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._tu_fifo_peek
-                0x00000000100073d4       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007484       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._ff_pull_const_addr
-                0x0000000010007420       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100074d0       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._tu_fifo_peek_n
-                0x0000000010007478      0x11c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007528      0x11c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._tu_fifo_read_n
-                0x0000000010007594       0x4a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
- *fill*         0x00000000100075de        0x2 
+                0x0000000010007644       0x4a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+ *fill*         0x000000001000768e        0x2 
  .text._ff_push_const_addr
-                0x00000000100075e0       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007690       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._tu_fifo_write_n.part.0
-                0x0000000010007628      0x19c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100076d8      0x19c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text.tu_fifo_config
-                0x00000000100077c4       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100077c4                tu_fifo_config
+                0x0000000010007874       0x68 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007874                tu_fifo_config
  .text.tu_fifo_count
-                0x000000001000782c       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000782c                tu_fifo_count
+                0x00000000100078dc       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100078dc                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010007854       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007854                tu_fifo_empty
+                0x0000000010007904       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007904                tu_fifo_empty
  .text.tu_fifo_full
-                0x0000000010007864       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007864                tu_fifo_full
+                0x0000000010007914       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007914                tu_fifo_full
  .text.tu_fifo_remaining
-                0x000000001000788a       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000788a                tu_fifo_remaining
+                0x000000001000793a       0x28 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000793a                tu_fifo_remaining
  .text.tu_fifo_read
-                0x00000000100078b2       0x42 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100078b2                tu_fifo_read
+                0x0000000010007962       0x42 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007962                tu_fifo_read
  .text.tu_fifo_read_n
-                0x00000000100078f4        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100078f4                tu_fifo_read_n
+                0x00000000100079a4        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100079a4                tu_fifo_read_n
  .text.tu_fifo_write
-                0x00000000100078fe       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100078fe                tu_fifo_write
+                0x00000000100079ae       0x64 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100079ae                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010007962       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007962                tu_fifo_write_n
+                0x0000000010007a12       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007a12                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010007974       0x3e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007974                tu_fifo_clear
+                0x0000000010007a24       0x3e CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007a24                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x00000000100079b2       0x46 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100079b2                tu_fifo_set_overwritable
- .text          0x00000000100079f8       0x48 git/libcmake_git_version_tracking.a(git.c.obj)
-                0x00000000100079f8                git_IsPopulated
-                0x00000000100079fc                git_AnyUncommittedChanges
-                0x0000000010007a00                git_AuthorName
-                0x0000000010007a08                git_AuthorEmail
-                0x0000000010007a10                git_CommitSHA1
-                0x0000000010007a18                git_CommitDate
-                0x0000000010007a20                git_CommitSubject
-                0x0000000010007a28                git_CommitBody
-                0x0000000010007a30                git_Describe
-                0x0000000010007a38                git_Branch
- .text          0x0000000010007a40       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
-                0x0000000010007a40                malloc
-                0x0000000010007a54                free
- .text          0x0000000010007a68      0x574 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
-                0x0000000010007a68                _malloc_r
- .text          0x0000000010007fdc        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
-                0x0000000010007fdc                __malloc_lock
-                0x0000000010007fe0                __malloc_unlock
- .text          0x0000000010007fe4       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
-                0x0000000010007fe4                _sbrk_r
- .text          0x0000000010008008       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
-                0x0000000010008008                strcpy
- .text          0x0000000010008018       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010008018                strlen
- .text          0x0000000010008074      0x260 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
-                0x0000000010008074                _malloc_trim_r
-                0x0000000010008110                _free_r
+                0x0000000010007a62       0x46 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007a62                tu_fifo_set_overwritable
+ .text          0x0000000010007aa8       0x48 git/libcmake_git_version_tracking.a(git.c.obj)
+                0x0000000010007aa8                git_IsPopulated
+                0x0000000010007aac                git_AnyUncommittedChanges
+                0x0000000010007ab0                git_AuthorName
+                0x0000000010007ab8                git_AuthorEmail
+                0x0000000010007ac0                git_CommitSHA1
+                0x0000000010007ac8                git_CommitDate
+                0x0000000010007ad0                git_CommitSubject
+                0x0000000010007ad8                git_CommitBody
+                0x0000000010007ae0                git_Describe
+                0x0000000010007ae8                git_Branch
+ .text          0x0000000010007af0       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
+                0x0000000010007af0                malloc
+                0x0000000010007b04                free
+ .text          0x0000000010007b18      0x574 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
+                0x0000000010007b18                _malloc_r
+ .text          0x000000001000808c        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
+                0x000000001000808c                __malloc_lock
+                0x0000000010008090                __malloc_unlock
+ .text          0x0000000010008094       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
+                0x0000000010008094                _sbrk_r
+ .text          0x00000000100080b8       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+                0x00000000100080b8                strcpy
+ .text          0x00000000100080c8       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000100080c8                strlen
+ .text          0x0000000010008124      0x260 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+                0x0000000010008124                _malloc_trim_r
+                0x00000000100081c0                _free_r
  *(.fini)
- .fini          0x00000000100082d4        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x00000000100082d4                _fini
- .fini.__stub   0x00000000100082d8       0xf0 linker stubs
+ .fini          0x0000000010008384        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000010008384                _fini
+ .fini.__stub   0x0000000010008388       0xf0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2801,168 +2815,170 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100083c8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100083c8                . = ALIGN (0x4)
+ .eh_frame      0x0000000010008478        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010008478                . = ALIGN (0x4)
 
-.glue_7         0x00000000100083c8        0x0
- .glue_7        0x00000000100083c8        0x0 linker stubs
+.glue_7         0x0000000010008478        0x0
+ .glue_7        0x0000000010008478        0x0 linker stubs
 
-.glue_7t        0x00000000100083c8        0x0
- .glue_7t       0x00000000100083c8        0x0 linker stubs
+.glue_7t        0x0000000010008478        0x0
+ .glue_7t       0x0000000010008478        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100083c8        0x0
- .vfp11_veneer  0x00000000100083c8        0x0 linker stubs
+.vfp11_veneer   0x0000000010008478        0x0
+ .vfp11_veneer  0x0000000010008478        0x0 linker stubs
 
-.v4_bx          0x00000000100083c8        0x0
- .v4_bx         0x00000000100083c8        0x0 linker stubs
+.v4_bx          0x0000000010008478        0x0
+ .v4_bx         0x0000000010008478        0x0 linker stubs
 
-.iplt           0x00000000100083c8        0x0
- .iplt          0x00000000100083c8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010008478        0x0
+ .iplt          0x0000000010008478        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100083c8      0x5e4
+.rodata         0x0000000010008478      0x5c0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.prvSerialDisplaySystemInfo.str1.1
-                0x00000000100083c8       0x96 CMakeFiles/main_standalone.dir/core/main.c.obj
+                0x0000000010008478       0x96 CMakeFiles/main_standalone.dir/core/main.c.obj
  .rodata.main.str1.1
-                0x000000001000845e       0x11 CMakeFiles/main_standalone.dir/core/main.c.obj
+                0x000000001000850e       0x11 CMakeFiles/main_standalone.dir/core/main.c.obj
  .rodata.pvCreateUsbTasks.str1.1
-                0x000000001000846f        0x9 CMakeFiles/main_standalone.dir/core/usb/tasks.c.obj
- .rodata        0x0000000010008478        0x6 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
+                0x000000001000851f        0x9 CMakeFiles/main_standalone.dir/core/usb/tasks.c.obj
+ .rodata        0x0000000010008528        0x6 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
  .rodata.unknown
-                0x000000001000847e        0x2 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
-                0x000000001000847e                unknown
+                0x000000001000852e        0x2 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
+                0x000000001000852e                unknown
  .rodata.version
-                0x0000000010008480        0x3 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
-                0x0000000010008480                version
+                0x0000000010008530        0x3 CMakeFiles/main_standalone.dir/core/usb/vendor_request.c.obj
+                0x0000000010008530                version
  .rodata.desc_url
-                0x0000000010008483       0x38 CMakeFiles/main_standalone.dir/core/usb/webusb.c.obj
-                0x0000000010008483                desc_url
+                0x0000000010008533       0x38 CMakeFiles/main_standalone.dir/core/usb/webusb.c.obj
+                0x0000000010008533                desc_url
  .rodata.str1.1
-                0x00000000100084bb       0x60 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000856b       0x60 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
  .rodata.__compound_literal.0
-                0x000000001000851b        0x2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x00000000100085cb        0x2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
  .rodata.desc_bos
-                0x000000001000851d       0x39 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x000000001000851d                desc_bos
+                0x00000000100085cd       0x39 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x00000000100085cd                desc_bos
  .rodata.desc_configuration
-                0x0000000010008556       0x62 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x0000000010008556                desc_configuration
+                0x0000000010008606       0x62 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x0000000010008606                desc_configuration
  .rodata.desc_device
-                0x00000000100085b8       0x12 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x00000000100085b8                desc_device
+                0x0000000010008668       0x12 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x0000000010008668                desc_device
  .rodata.desc_ms_os_20
-                0x00000000100085ca       0xb2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
-                0x00000000100085ca                desc_ms_os_20
+                0x000000001000867a       0xb2 CMakeFiles/main_standalone.dir/core/tinyusb-config/usb_descriptors.c.obj
+                0x000000001000867a                desc_ms_os_20
  .rodata.pvRegisterBulkQueueTask.str1.1
-                0x000000001000867c        0x7 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
+                0x000000001000872c        0x7 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
  .rodata.pvCreateBulkQueue.str1.1
-                0x0000000010008683       0x13 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
+                0x0000000010008733       0x13 CMakeFiles/main_standalone.dir/core/tasks/bulk.c.obj
  .rodata.pvRegisterMcuTempTask.str1.1
-                0x0000000010008696        0x6 CMakeFiles/main_standalone.dir/core/tasks/mcu_temperature.c.obj
+                0x0000000010008746        0x6 CMakeFiles/main_standalone.dir/core/tasks/mcu_temperature.c.obj
  .rodata.spin_lock_claim.str1.1
-                0x000000001000869c       0x1f CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000874c       0x1f CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.spin_lock_claim_unused.str1.1
-                0x00000000100086bb       0x1b CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000876b       0x1b CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.hardware_alarm_claim.str1.1
-                0x00000000100086d6       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010008786       0x22 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.panic.str1.1
-                0x00000000100086f8       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100087a8       0x10 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                          0x12 (size before relaxing)
  .rodata.panic_unsupported.str1.1
-                0x0000000010008708        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100087b8        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.hard_assertion_failure.str1.1
-                0x0000000010008716        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100087c6        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.1
-                0x0000000010008722       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010008734        0x4 
+                0x00000000100087d2       0x12 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x00000000100087e4        0x4 
  .rodata.pow10.0
-                0x0000000010008738       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100087e8       0x50 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.check_alloc.str1.1
-                0x0000000010008788        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x0000000010008838        0xe CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .rodata.str1.1
-                0x0000000010008796       0x40 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008846       0x3a CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                                         0x40 (size before relaxing)
  .rodata.__bi_44
-                0x00000000100087d6        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008880        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x00000000100087e2        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000888c        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x00000000100087ee        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008898        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x00000000100087fa        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100088a4        0x2 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.str1.1
-                0x00000000100087fc       0x2b CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100088a6       0x2b CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x0000000010008827        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100088d1        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x0000000010008833        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100088dd        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.vTaskStartScheduler.str1.1
-                0x000000001000883b        0x5 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
+                0x00000000100088e5        0x5 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/tasks.c.obj
  .rodata.prvCheckForValidListAndQueue.str1.1
-                0x0000000010008840        0x5 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x00000000100088ea        0x5 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .rodata.xTimerCreateTimerTask.str1.1
-                0x0000000010008845        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
+                0x00000000100088ef        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/freertos-smp/timers.c.obj
  .rodata.str1.1
-                0x000000001000884d       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100088f7       0x14 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.1
-                0x0000000010008861       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000890b       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                          0x4f (size before relaxing)
- *fill*         0x00000000100088a9        0x3 
+ *fill*         0x0000000010008953        0x1 
  .rodata._usbd_driver
-                0x00000000100088ac       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010008954       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
  .rodata.str1.1
-                0x00000000100088dc        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010008984        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_142.0
-                0x00000000100088e0        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010008988        0xc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_152.1
-                0x00000000100088ec        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010008994        0x8 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.str1.1
-                0x00000000100088f4       0xb8 git/libcmake_git_version_tracking.a(git.c.obj)
-                                         0xb9 (size before relaxing)
-                0x00000000100089ac                . = ALIGN (0x4)
+                0x000000001000899c       0x9a git/libcmake_git_version_tracking.a(git.c.obj)
+                                         0x9b (size before relaxing)
+                0x0000000010008a38                . = ALIGN (0x4)
+ *fill*         0x0000000010008a36        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x00000000100089ac                . = ALIGN (0x4)
-
-.rel.dyn        0x00000000100089ac        0x0
- .rel.iplt      0x00000000100089ac        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010008a38                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000100089ac                __exidx_start = .
+                0x0000000010008a38                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000100089ac                __exidx_end = .
-                0x00000000100089ac                . = ALIGN (0x4)
-                0x00000000100089ac                __binary_info_start = .
+                0x0000000010008a38                __exidx_end = .
+                0x0000000010008a38                . = ALIGN (0x4)
+                0x0000000010008a38                __binary_info_start = .
 
-.binary_info    0x00000000100089ac       0x2c
+.binary_info    0x0000000010008a38       0x2c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x00000000100089ac        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a38        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x00000000100089b0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a3c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x00000000100089b4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a40        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x00000000100089b8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a44        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x00000000100089bc        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a48        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x00000000100089c0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a4c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x00000000100089c4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008a50        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr142
-                0x00000000100089c8        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010008a54        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .binary_info.keep.__bi_ptr152
-                0x00000000100089cc        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010008a58        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x00000000100089d0        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010008a5c        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x00000000100089d4        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x00000000100089d8                __binary_info_end = .
-                0x00000000100089d8                . = ALIGN (0x4)
-                0x00000000100089d8                __etext = .
+                0x0000000010008a60        0x4 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010008a64                __binary_info_end = .
+                0x0000000010008a64                . = ALIGN (0x4)
+                0x0000000010008a64                __etext = .
+
+.rel.dyn        0x0000000010008a64        0x0
+ .rel.iplt      0x0000000010008a64        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2971,7 +2987,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0     0x1224 load address 0x00000000100089d8
+.data           0x00000000200000c0     0x1224 load address 0x0000000010008a64
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3008,41 +3024,42 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .time_critical.hw_handle_buff_status
                 0x0000000020000354       0x80 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .time_critical.dcd_rp2040_irq
-                0x00000000200003d4      0x188 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000200003d4      0x184 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .time_critical.e15_is_bulkin_ep
-                0x000000002000055c       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000558       0x24 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .time_critical.e15_is_critical_frame_period
-                0x0000000020000580       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000002000057c       0x30 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .time_critical.prepare_ep_buffer
-                0x00000000200005b0       0x66 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000200005ac       0x66 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .time_critical.sync_ep_buffer
-                0x0000000020000616       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000612       0x48 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .time_critical._hw_endpoint_xfer_sync
-                0x000000002000065e       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000002000065a       0x26 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .time_critical.hw_endpoint_reset_transfer
-                0x0000000020000684        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020000684                hw_endpoint_reset_transfer
- *fill*         0x000000002000068e        0x2 
+                0x0000000020000680        0xa CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000680                hw_endpoint_reset_transfer
+ *fill*         0x000000002000068a        0x2 
  .time_critical._hw_endpoint_buffer_control_update32
-                0x0000000020000690       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020000690                _hw_endpoint_buffer_control_update32
+                0x000000002000068c       0x58 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000002000068c                _hw_endpoint_buffer_control_update32
  .time_critical.hw_endpoint_start_next_buffer
-                0x00000000200006e8       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000200006e8                hw_endpoint_start_next_buffer
+                0x00000000200006e4       0x74 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000200006e4                hw_endpoint_start_next_buffer
  .time_critical.hw_endpoint_xfer_continue
-                0x000000002000075c       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000002000075c                hw_endpoint_xfer_continue
+                0x0000000020000758       0x4c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000758                hw_endpoint_xfer_continue
  .time_critical.tinyusb
-                0x00000000200007a8       0xdc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000200007a8                dcd_event_handler
+                0x00000000200007a4       0xdc CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000200007a4                dcd_event_handler
  *(.text*)
- .text          0x0000000020000884       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
-                0x0000000020000884                __gnu_thumb1_case_uqi
- .text          0x0000000020000898       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
-                0x0000000020000898                __gnu_thumb1_case_shi
- .text          0x00000000200008ac        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x00000000200008ac                __aeabi_ldiv0
-                0x00000000200008ac                __aeabi_idiv0
+ .text          0x0000000020000880       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000020000880                __gnu_thumb1_case_uqi
+ .text          0x0000000020000894       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x0000000020000894                __gnu_thumb1_case_shi
+ .text          0x00000000200008a8        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000200008a8                __aeabi_ldiv0
+                0x00000000200008a8                __aeabi_idiv0
+ *fill*         0x00000000200008ac        0x4 
  .text.__stub   0x00000000200008b0       0xd0 linker stubs
                 0x0000000020000980                . = ALIGN (0x4)
  *(.rodata*)
@@ -3135,33 +3152,33 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x00000000200012e4                __data_end__ = .
 
 .tm_clone_table
-                0x00000000200012e4        0x0 load address 0x0000000010009bfc
+                0x00000000200012e4        0x0 load address 0x0000000010009c88
  .tm_clone_table
                 0x00000000200012e4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x00000000200012e4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200012e4        0x0 load address 0x0000000010009bfc
+.igot.plt       0x00000000200012e4        0x0 load address 0x0000000010009c88
  .igot.plt      0x00000000200012e4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200012e4        0x0 load address 0x0000000010009bfc
+                0x00000000200012e4        0x0 load address 0x0000000010009c88
                 0x00000000200012e4                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010009bfc
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010009c88
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010009bfc                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010009c88                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010009bfc
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010009c88
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010009bfc                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010009c88                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x00000000200012e8    0x21158
                 0x00000000200012e8                . = ALIGN (0x4)
@@ -3366,8 +3383,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010009bfc        0x0
-                0x0000000010009bfc                __flash_binary_end = .
+.flash_end      0x0000000010009c88        0x0
+                0x0000000010009c88                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3465,7 +3482,7 @@ LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyu
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 LOAD libcore.a
-LOAD /tmp/cc6bnI1W.o
+LOAD /tmp/cccQIreS.o
 LOAD git/libcmake_git_version_tracking.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
@@ -3620,7 +3637,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000aec       0x2c CMakeFiles/main_standalone.dir/home/runner/work/firmware/firmware/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .ARM.attributes
-                0x0000000000000b18       0x22 /tmp/cc6bnI1W.o
+                0x0000000000000b18       0x22 /tmp/cccQIreS.o
  .ARM.attributes
                 0x0000000000000b3a       0x2c git/libcmake_git_version_tracking.a(git.c.obj)
  .ARM.attributes
