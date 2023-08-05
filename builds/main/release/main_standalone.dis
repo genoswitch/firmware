@@ -7,13 +7,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   1 .text         0000ab40  10000100  10000100  00001100  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       000008c8  1000ac40  1000ac40  0000bc40  2**3
+  2 .rodata       000008d8  1000ac40  1000ac40  0000bc40  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .binary_info  0000002c  1000b508  1000b508  0000c508  2**2
+  3 .binary_info  0000002c  1000b518  1000b518  0000c518  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   4 .ram_vector_table 000000c0  20000000  20000000  0000e7d4  2**2
                   CONTENTS
-  5 .data         00001714  200000c0  1000b534  0000d0c0  2**4
+  5 .data         00001714  200000c0  1000b544  0000d0c0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   6 .uninitialized_data 00000000  200017d4  200017d4  0000e894  2**0
                   CONTENTS
@@ -198,8 +198,8 @@ Disassembly of section .text:
 
 100001d4 <binary_info_header>:
 100001d4:	7188ebf2 	.word	0x7188ebf2
-100001d8:	1000b508 	.word	0x1000b508
-100001dc:	1000b534 	.word	0x1000b534
+100001d8:	1000b518 	.word	0x1000b518
+100001dc:	1000b544 	.word	0x1000b544
 100001e0:	10000234 	.word	0x10000234
 100001e4:	e71aa390 	.word	0xe71aa390
 
@@ -254,13 +254,13 @@ Disassembly of section .text:
 10000232:	4770      	bx	lr
 
 10000234 <data_cpy_table>:
-10000234:	1000b534 	.word	0x1000b534
+10000234:	1000b544 	.word	0x1000b544
 10000238:	200000c0 	.word	0x200000c0
 1000023c:	200017d4 	.word	0x200017d4
-10000240:	1000cc48 	.word	0x1000cc48
+10000240:	1000cc58 	.word	0x1000cc58
 10000244:	20040000 	.word	0x20040000
 10000248:	20040000 	.word	0x20040000
-1000024c:	1000cc48 	.word	0x1000cc48
+1000024c:	1000cc58 	.word	0x1000cc58
 10000250:	20041000 	.word	0x20041000
 10000254:	20041000 	.word	0x20041000
 10000258:	00000000 	.word	0x00000000
@@ -290,7 +290,7 @@ Disassembly of section .text:
 100002a0:	50520006 9da22254 1000b280              ..RPT"......
 
 100002ac <__bi_22>:
-100002ac:	50520005 68f465de 1000cc48              ..RP.e.hH...
+100002ac:	50520005 68f465de 1000cc58              ..RP.e.hX...
 
 100002b8 <_init>:
 100002b8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -9420,8 +9420,8 @@ Disassembly of section .text:
 10004c34:	4805      	ldr	r0, [pc, #20]	; (10004c4c <stdio_uart_init+0x44>)
 10004c36:	f7ff fe8f 	bl	10004958 <stdio_set_driver_enabled>
 10004c3a:	bd10      	pop	{r4, pc}
-10004c3c:	1000b52c 	.word	0x1000b52c
-10004c40:	1000b530 	.word	0x1000b530
+10004c3c:	1000b53c 	.word	0x1000b53c
+10004c40:	1000b540 	.word	0x1000b540
 10004c44:	20002820 	.word	0x20002820
 10004c48:	40034000 	.word	0x40034000
 10004c4c:	20000f20 	.word	0x20000f20
@@ -19565,12 +19565,12 @@ Disassembly of section .text:
 1000a250 <git_Describe>:
 1000a250:	4800      	ldr	r0, [pc, #0]	; (1000a254 <git_Describe+0x4>)
 1000a252:	4770      	bx	lr
-1000a254:	1000b4f8 	.word	0x1000b4f8
+1000a254:	1000b508 	.word	0x1000b508
 
 1000a258 <git_Branch>:
 1000a258:	4800      	ldr	r0, [pc, #0]	; (1000a25c <git_Branch+0x4>)
 1000a25a:	4770      	bx	lr
-1000a25c:	1000b500 	.word	0x1000b500
+1000a25c:	1000b510 	.word	0x1000b510
 
 1000a260 <calloc>:
 1000a260:	0003      	movs	r3, r0
